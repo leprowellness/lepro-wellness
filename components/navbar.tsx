@@ -24,19 +24,21 @@ const Navbar = () => {
     <nav className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50 animate-slide-down">
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-6">
         <div className="flex justify-between items-center h-28">
-          {/* Logo only in corner */}
-          {/* Logo + Text */}
-<Link href="/" className="flex items-center space-x-3 group">
+{/* Logo + Text */}
+<Link
+  href="/"
+  className="flex items-center justify-center md:justify-start space-x-3 group"
+>
   <Image
     src="/logoo.png"
     alt="Lepro Wellness Logo"
-    width={220}
-    height={190}
-    className="transition-transform duration-300 group-hover:scale-105"
+    width={200}
+    height={200}
+    className="transition-transform duration-300 group-hover:scale-105 max-w-[140px] sm:max-w-[160px] md:max-w-[200px] h-auto"
     priority
   />
-  <div className="flex flex-col">
-    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+  <div className="flex flex-col leading-tight">
+    <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
       Lepro Wellness Center
     </h1>
     <p className="text-xs sm:text-sm md:text-base text-gray-600">
@@ -44,6 +46,8 @@ const Navbar = () => {
     </p>
   </div>
 </Link>
+
+
 
 
           {/* Desktop Menu */}
