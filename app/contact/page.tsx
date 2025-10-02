@@ -77,8 +77,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      content: "admin@leprowellness.ca",
-      link: "mailto:admin@leprowellness.com",
+      content: "admin@leprowellnesscenter.ca",
+      link: "mailto:admin@leprowellnesscenter.ca",
       color: "from-teal-500 to-emerald-600",
     },
     {
