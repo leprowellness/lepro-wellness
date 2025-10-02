@@ -22,25 +22,27 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50 animate-slide-down">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-6">
         <div className="flex justify-between items-center h-28">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-4 group">
+          {/* Logo only in corner */}
+          <Link href="/" className="flex items-center group">
             <Image
               src="/logoo.png"
               alt="Lepro Wellness Logo"
               width={220}
-              height={200}
+              height={190}
               className="transition-transform duration-300 group-hover:scale-105"
               priority
             />
-            <div>
-              <h1 className="text-3xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                Lepro Wellness Center
-              </h1>
-              <p className="text-sm text-gray-600">Your Path to Better Health</p>
-            </div>
           </Link>
+
+          {/* Text beside logo only on larger screens */}
+          <div className="hidden md:block ml-3">
+            <h1 className="text-4xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              Lepro Wellness Center
+            </h1>
+            <p className="text-lg text-gray-600">Your Path to Better Health</p>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
@@ -70,7 +72,7 @@ const Navbar = () => {
                 />
               </button>
 
-              {/* Dropdown Menu */}
+              {/* Dropdown */}
               <div
                 className={`absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
                   isServicesOpen
@@ -87,7 +89,6 @@ const Navbar = () => {
                     className={`block px-4 py-3 text-sm font-medium transition-all duration-200 hover:bg-emerald-50 hover:text-emerald-600 hover:pl-6 ${
                       isActive(service.path) ? "bg-emerald-50 text-emerald-600" : "text-gray-700"
                     }`}
-                    style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {service.name}
                   </Link>
