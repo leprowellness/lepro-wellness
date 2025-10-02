@@ -25,24 +25,26 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-6">
         <div className="flex justify-between items-center h-28">
           {/* Logo only in corner */}
-          <Link href="/" className="flex items-center group">
-            <Image
-              src="/logoo.png"
-              alt="Lepro Wellness Logo"
-              width={220}
-              height={190}
-              className="transition-transform duration-300 group-hover:scale-105"
-              priority
-            />
-          </Link>
+          {/* Logo + Text */}
+<Link href="/" className="flex items-center space-x-3 group">
+  <Image
+    src="/logoo.png"
+    alt="Lepro Wellness Logo"
+    width={220}
+    height={190}
+    className="transition-transform duration-300 group-hover:scale-105"
+    priority
+  />
+  <div className="flex flex-col">
+    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+      Lepro Wellness Center
+    </h1>
+    <p className="text-xs sm:text-sm md:text-base text-gray-600">
+      Your Path to Better Health
+    </p>
+  </div>
+</Link>
 
-          {/* Text beside logo only on larger screens */}
-          <div className="hidden md:block ml-3">
-            <h1 className="text-2xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              Lepro Wellness Center
-            </h1>
-            <p className="text-sm text-gray-600">Your Path to Better Health</p>
-          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
