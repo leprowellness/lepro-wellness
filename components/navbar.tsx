@@ -38,10 +38,10 @@ const Navbar = () => {
 
           {/* Text beside logo only on larger screens */}
           <div className="hidden md:block ml-3">
-            <h1 className="text-4xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               Lepro Wellness Center
             </h1>
-            <p className="text-lg text-gray-600">Your Path to Better Health</p>
+            <p className="text-sm text-gray-600">Your Path to Better Health</p>
           </div>
 
           {/* Desktop Menu */}
