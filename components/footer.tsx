@@ -11,15 +11,18 @@ const Footer = () => {
           {/* About Section */}
           <div className="animate-fade-in">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">L</span>
-              </div>
-              <h3 className="text-xl font-bold">Lepro Wellness</h3>
+              {/* Text stays same */}
+              <h3 className="text-2xl font-bold whitespace-nowrap">
+                Lepro Wellness Center
+              </h3>
             </div>
+
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Your trusted partner in health and wellness. We provide comprehensive therapy services to help you achieve
               optimal health.
             </p>
+
+            {/* Social Icons */}
             <div className="flex space-x-4">
               <a
                 href="#"
