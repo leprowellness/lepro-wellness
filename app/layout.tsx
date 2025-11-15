@@ -1,23 +1,41 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { Analytics } from "@vercel/analytics/next"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import "./globals.css"
-import { Suspense } from "react"
+import type React from "react";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import "./globals.css";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Lepro Wellness Center - Your Path to Better Health",
-  description: "Expert physiotherapy, athletic therapy, massage therapy, and accidental therapy services",
+  description:
+    "Expert physiotherapy, athletic therapy, massage therapy, and accidental therapy services in Ottawa",
   generator: "v0.app",
-}
+  icons: {
+    icon: "/logoo.png",           // main favicon
+    shortcut: "/logoo.png", // optional
+    apple: "/logoo.png",       // optional
+  },
+  keywords: [
+    "physiotherapy Ottawa",
+    "massage therapy Ottawa",
+    "athletic therapy Ottawa",
+    "wellness center Ottawa",
+    "rehabilitation Ottawa",
+    "holistic wellness Ottawa",
+    "injury recovery Ottawa",
+    "Ottawa physiotherapist",
+    "Ottawa wellness clinic",
+    "Ottawa massage clinic",
+  ],
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -34,12 +52,15 @@ html {
         <Suspense fallback={<div>Loading...</div>}>
           <Navbar />
         </Suspense>
+
         <main className="flex-grow">{children}</main>
+
         <Suspense fallback={<div>Loading...</div>}>
           <Footer />
         </Suspense>
+
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

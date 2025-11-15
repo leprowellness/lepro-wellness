@@ -26,7 +26,7 @@ export default function About() {
 
   const team = [
     {
-      name: "Dr. Sarah Johnson",
+      name: "Sarah Johnson",
       role: "Lead Physiotherapist",
       image: "/professional-female-physiotherapist.png",
     },
@@ -57,7 +57,7 @@ export default function About() {
               About Lepro Wellness Center
             </h1>
             <p className="text-xl text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100">
-              Comprehensive wellness, rehabilitation, and mental health services in Kemptville, Ontario.
+              Comprehensive wellness, rehabilitation, and mental health services in Ottawa, Ontario.
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-gray-700 leading-relaxed">
           <p>
             Welcome to <strong>Lepro Wellness Center</strong>, your comprehensive destination for wellness,
-            rehabilitation, and mental health support in <strong>Kemptville, Ontario</strong>. We are dedicated to helping
+            rehabilitation, and mental health support in <strong>Ottawa, Ontario</strong>. We are dedicated to helping
             our community achieve better physical, mental, and emotional well-being through a variety of specialized
             services. Individuals covered by Interim Federal Health Program (IFHP coverage with UCI number) are welcome
             to get their treatment at our wellness center.
@@ -77,7 +77,7 @@ export default function About() {
             At Lepro Wellness Center, we believe in a holistic approach to health. Our experienced team offers a range of
             services to support injury recovery, pain management, stress relief, and mental wellness. Our mission is to
             empower you with the tools and care you need to live a healthy, balanced life. We take pride in being a
-            trusted wellness center in Kemptville, bringing together skilled professionals across physiotherapy, athletic
+            trusted wellness center in Ottawa, bringing together skilled professionals across physiotherapy, athletic
             therapy, clinical psychology, and massage therapy. We also specialize in Motor Vehicle Accident (MVA)
             treatment, offering tailored physiotherapy and rehabilitation services to help individuals recover from
             accident-related injuries.
