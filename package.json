@@ -48,7 +48,11 @@
     "input-otp": "latest",
     "lucide-react": "^0.454.0",
     "mongodb": "^6.20.0",
+<<<<<<< HEAD
     "next": "^14.2.33",
+=======
+    "next": "14.2.16",
+>>>>>>> origin/main
     "next-themes": "latest",
     "nodemailer": "^7.0.6",
     "react": "^18",

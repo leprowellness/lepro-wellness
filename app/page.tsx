@@ -1,5 +1,5 @@
-"use client"; // Required for useState/useEffect
 
+"use client"; // Required for useState/useEffect
 import Link from "next/link";
 import {
   Activity,
@@ -9,7 +9,9 @@ import {
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
+
 import { useState, useEffect } from "react";
+
 
 export default function Home() {
   const services = [
@@ -54,6 +56,7 @@ export default function Home() {
     "Holistic Approach to Wellness",
   ];
 
+
   // Carousel images
   const carouselImages = ["/1.jpeg", "/2.jpeg", "/3.jpeg", "/4.jpeg"];
 
@@ -65,6 +68,7 @@ export default function Home() {
     }, 3000); // 3 seconds per image
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <div className="min-h-screen">
@@ -170,6 +174,7 @@ export default function Home() {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-600 p-1">
                 <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
                   <img
+
                     src="/4.jpeg"
                     alt="Wellness Center"
                     className="w-full h-full object-cover rounded-2xl"
@@ -243,6 +248,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
