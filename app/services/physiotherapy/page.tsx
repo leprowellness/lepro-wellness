@@ -1,5 +1,28 @@
 import Link from "next/link"
 import { Activity, CheckCircle, ArrowRight, Clock, Users, Award } from "lucide-react"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Physiotherapy Ottawa | Expert Physical Therapy Services Ontario | Lepro Wellness",
+  description: "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, MVA rehabilitation. IFHP coverage accepted. Licensed physiotherapists.",
+  keywords: [
+    "physiotherapy ottawa",
+    "physical therapy ottawa ontario",
+    "physiotherapist ottawa",
+    "injury rehabilitation ottawa",
+    "MVA physiotherapy ottawa",
+    "IFHP physiotherapy",
+    "back pain treatment ottawa",
+    "sports injury physiotherapy",
+    "chronic pain management ottawa",
+    "post surgical rehabilitation ottawa"
+  ],
+  openGraph: {
+    title: "Physiotherapy Ottawa | Expert Physical Therapy Services",
+    description: "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, and rehabilitation.",
+    url: 'https://leprowellness.ca/services/physiotherapy',
+  },
+}
 
 export default function Physiotherapy() {
   const benefits = [
@@ -13,11 +36,14 @@ export default function Physiotherapy() {
 
   const conditions = [
     "Back and neck pain",
-    "Sports injuries",
+    "Sports injuries and rehabilitation",
+    "Motor vehicle accident (MVA) injuries",
+    "Workplace injury rehabilitation",
     "Post-surgical rehabilitation",
-    "Arthritis management",
+    "Arthritis and joint pain management",
     "Neurological conditions",
     "Chronic pain conditions",
+    "WSIB covered injuries",
   ]
 
   const features = [
@@ -92,7 +118,7 @@ export default function Physiotherapy() {
     </div>
 
     <p className="text-xl text-emerald-50 mb-8 leading-relaxed">
-      Restore movement, reduce pain, and improve your quality of life with our expert physiotherapy services.
+      Expert physiotherapy services in Ottawa, Ontario. Restore movement, reduce pain, and improve your quality of life with our licensed Canadian physiotherapists. IFHP coverage accepted.
     </p>
 
     <Link

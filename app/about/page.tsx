@@ -1,4 +1,25 @@
 import { Heart, Target, Users, Award, CheckCircle, Activity, BriefcaseMedical, Hand, Dumbbell } from "lucide-react"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Lepro Wellness Center Ottawa | Expert Healthcare Team Ontario",
+  description: "Learn about Ottawa's premier wellness center. Expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP coverage accepted. Licensed Canadian healthcare professionals.",
+  keywords: [
+    "about lepro wellness center",
+    "ottawa wellness center team",
+    "physiotherapy clinic ottawa",
+    "healthcare professionals ottawa",
+    "IFHP coverage ottawa",
+    "MVA rehabilitation ottawa",
+    "licensed therapists ontario",
+    "wellness center about us"
+  ],
+  openGraph: {
+    title: "About Lepro Wellness Center Ottawa | Expert Healthcare Team",
+    description: "Learn about Ottawa's premier wellness center offering expert physiotherapy, massage therapy, and athletic therapy services.",
+    url: 'https://leprowellness.ca/about',
+  },
+}
 
 export default function About() {
   const values = [

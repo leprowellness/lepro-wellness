@@ -16,9 +16,9 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const services = [
     {
-      title: "Physiotherapy",
+      title: "Physiotherapy Ottawa",
       description:
-        "Restore movement and function with expert physiotherapy treatments.",
+        "Restore movement and function with expert physiotherapy treatments. IFHP coverage accepted.",
       icon: Activity,
       link: "/services/physiotherapy",
       color: "from-emerald-500 to-teal-600",
@@ -26,21 +26,21 @@ export default function Home() {
     {
       title: "Athletic Therapy",
       description:
-        "Specialized care for athletes to enhance performance and recovery.",
+        "Specialized care for athletes to enhance performance and recovery. Sports medicine expertise.",
       icon: Award,
       link: "/services/athletic-therapy",
       color: "from-blue-500 to-cyan-600",
     },
     {
       title: "Massage Therapy",
-      description: "Therapeutic massage to relieve stress and promote healing.",
+      description: "Registered massage therapy for stress relief and healing. Insurance coverage available.",
       icon: Heart,
       link: "/services/massage-therapy",
       color: "from-teal-500 to-emerald-600",
     },
     {
-      title: "Accidental Therapy",
-      description: "Comprehensive rehabilitation after accidents and injuries.",
+      title: "MVA Rehabilitation",
+      description: "Comprehensive motor vehicle accident rehabilitation and injury recovery services.",
       icon: Users,
       link: "/services/accidental-therapy",
       color: "from-cyan-500 to-blue-600",
@@ -48,12 +48,14 @@ export default function Home() {
   ];
 
   const features = [
-    "Experienced & Certified Therapists",
-    "State-of-the-Art Facilities",
+    "Licensed Canadian Healthcare Professionals",
+    "IFHP Coverage Accepted",
+    "Insurance Direct Billing Available",
+    "State-of-the-Art Facilities in Ottawa",
     "Personalized Treatment Plans",
     "Flexible Scheduling Options",
-    "Insurance Accepted",
-    "Holistic Approach to Wellness",
+    "MVA & Workplace Injury Specialists",
+    "Bilingual Services Available",
   ];
 
 
@@ -94,11 +96,10 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-down text-balance text-white">
-                Welcome to Lepro Wellness Center
+                Welcome to Lepro Wellness Center Ottawa
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100 text-pretty">
-                Your journey to optimal health and wellness starts here. Expert
-                care, personalized treatment, exceptional results.
+                Ottawa's premier wellness destination. Expert physiotherapy, massage therapy, and athletic therapy services. IFHP coverage accepted. Your journey to optimal health starts here.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in delay-200">
                 <Link
@@ -131,11 +132,12 @@ export default function Home() {
             Our Philosophy
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-up delay-100">
-            At Lepro Wellness Center, we believe true healing goes beyond
-            physical recovery. Our philosophy combines modern medical expertise
+            At Lepro Wellness Center in Ottawa, Ontario, we believe true healing goes beyond
+            physical recovery. Our philosophy combines modern Canadian healthcare standards
             with a holistic approach that nurtures the body, mind, and spirit.
             Every treatment plan is tailored to empower our clients, restore
-            balance, and inspire long-term wellness.
+            balance, and inspire long-term wellness. We proudly serve the Ottawa community
+            and accept IFHP coverage for eligible patients.
           </p>
         </div>
       </section>
