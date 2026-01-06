@@ -24,28 +24,6 @@ export default function About() {
     },
   ]
 
-  const team = [
-    {
-      name: "Sarah Johnson",
-      role: "Lead Physiotherapist",
-      image: "/professional-female-physiotherapist.png",
-    },
-    {
-      name: "Michael Chen",
-      role: "Athletic Therapist",
-      image: "/professional-male-athletic-therapist.jpg",
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Massage Therapist",
-      image: "/professional-female-massage-therapist.png",
-    },
-    {
-      name: "David Thompson",
-      role: "Rehabilitation Specialist",
-      image: "/professional-male-rehabilitation-specialist.jpg",
-    },
-  ]
 
   return (
     <div className="min-h-screen">
@@ -203,39 +181,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-slide-up">Meet Our Expert Team</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-slide-up delay-100">
-              Experienced professionals dedicated to your health and wellness
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={member.name}
-                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition hover:-translate-y-2 animate-scale-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-emerald-600 font-medium">{member.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
