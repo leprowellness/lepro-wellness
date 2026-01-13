@@ -189,7 +189,7 @@ export default function RootLayout({
                   "caption": "Lepro Wellness Center Logo"
                 }
               ],
-              "telephone": "+1-613-XXX-XXXX",
+              "telephone": "+16138785060",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Your Street Address",

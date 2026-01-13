@@ -130,12 +130,12 @@ const Footer = () => {
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                 <a
-                  href="https://wa.me/16137161606"
+                  href="https://wa.me/16138785060"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 text-sm"
                 >
-                  +1 (613) 716-1606
+                  +1 (613) 878-5060
                 </a>
               </li>
               <li className="flex items-center space-x-3">

@@ -71,8 +71,8 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      content: "+1 (613) 716-1606",
-      link: "https://wa.me/16137161606",
+      content: "+1 (613) 878-5060",
+      link: "https://wa.me/16138785060",
       color: "from-blue-500 to-cyan-600",
     },
     {
@@ -196,7 +196,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
-                    placeholder="+1 (613) 716-1606"
+                    placeholder="+1 (613) 878-5060"
                   />
                 </div>
 

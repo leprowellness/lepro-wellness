@@ -94,7 +94,7 @@ export async function sendCustomerConfirmation(booking: Booking) {
               
               <p>If you have any questions, please don't hesitate to contact us at ${
                 process.env.EMAIL_FROM || process.env.EMAIL_USER
-              } or call us at +1 (234) 567-890.</p>
+              } or call us at +1 (613) 878-5060.</p>
               
               <div class="footer">
                 <p>Best regards,<br><strong>Lepro Wellness Centre Team</strong></p>
