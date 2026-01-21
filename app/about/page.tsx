@@ -53,7 +53,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-down">
-              About Lepro Wellness Center
+              About LePro Wellness Center
             </h1>
             <p className="text-xl text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100">
               Comprehensive wellness, rehabilitation, and mental health services in Ottawa, Ontario.
