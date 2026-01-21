@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="flex items-center space-x-3 mb-4">
               <h3 className="text-2xl font-bold whitespace-nowrap">
-                Lepro Wellness Center
+                LePro Wellness Center
               </h3>
             </div>
 
@@ -154,7 +154,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Lepro Wellness Center. All rights reserved. | Designed with care for your health.
+            © {currentYear} LePro Wellness Center. All rights reserved. | Designed with care for your health.
           </p>
         </div>
       </div>

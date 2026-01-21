@@ -132,7 +132,7 @@ export default function Home() {
             Our Philosophy
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-up delay-100">
-            At Lepro Wellness Center in Ottawa, Ontario, we believe true healing goes beyond
+            At LePro Wellness Center in Ottawa, Ontario, we believe true healing goes beyond
             physical recovery. Our philosophy combines modern Canadian healthcare standards
             with a holistic approach that nurtures the body, mind, and spirit.
             Every treatment plan is tailored to empower our clients, restore
@@ -151,7 +151,7 @@ export default function Home() {
                 Why Choose Us?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Choosing Lepro Wellness Center means choosing compassionate care
+                Choosing LePro Wellness Center means choosing compassionate care
                 that focuses on you. We combine advanced therapy techniques with
                 personalized attention, ensuring every client feels supported on
                 their journey. Our dedicated team is here not only to treat

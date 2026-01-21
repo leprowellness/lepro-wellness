@@ -97,7 +97,7 @@ export async function sendCustomerConfirmation(booking: Booking) {
               } or call us at +1 (613) 878-5060.</p>
               
               <div class="footer">
-                <p>Best regards,<br><strong>Lepro Wellness Centre Team</strong></p>
+                <p>Best regards,<br><strong>LePro Wellness Centre Team</strong></p>
                 <p style="margin-top: 20px;">123 Wellness Street, Health City, HC 12345</p>
               </div>
             </div>

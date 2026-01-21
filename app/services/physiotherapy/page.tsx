@@ -3,7 +3,7 @@ import { Activity, CheckCircle, ArrowRight, Clock, Users, Award } from "lucide-r
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Ottawa | Expert Physical Therapy Services Ontario | Lepro Wellness",
+  title: "Physiotherapy Ottawa | Expert Physical Therapy Services Ontario | LePro Wellness",
   description: "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, MVA rehabilitation. IFHP coverage accepted. Licensed physiotherapists.",
   keywords: [
     "physiotherapy ottawa",

@@ -9,7 +9,7 @@ import "./globals.css";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Lepro Wellness Center Ottawa | Physiotherapy, Massage & Athletic Therapy Canada",
+  title: "LePro Wellness Center Ottawa | Physiotherapy, Massage & Athletic Therapy Canada",
   description:
     "Leading wellness center in Ottawa, Ontario offering expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP coverage accepted. Book your appointment today!",
   generator: "v0.app",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
     "sports medicine Ottawa",
     "physical therapy Ottawa Canada"
   ],
-  authors: [{ name: "Lepro Wellness Center" }],
-  creator: "Lepro Wellness Center",
-  publisher: "Lepro Wellness Center",
+  authors: [{ name: "LePro Wellness Center" }],
+  creator: "LePro Wellness Center",
+  publisher: "LePro Wellness Center",
   formatDetection: {
     email: false,
     address: false,
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Lepro Wellness Center Ottawa | Expert Physiotherapy & Wellness Services",
+    title: "LePro Wellness Center Ottawa | Expert Physiotherapy & Wellness Services",
     description: "Premier wellness center in Ottawa, Ontario. Expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP coverage accepted.",
     url: 'https://leprowellness.ca',
-    siteName: 'Lepro Wellness Center',
+    siteName: 'LePro Wellness Center',
     locale: 'en_CA',
     type: 'website',
     images: [
@@ -94,28 +94,28 @@ export const metadata: Metadata = {
         url: 'https://leprowellness.ca/logoo.png',
         width: 1200,
         height: 630,
-        alt: 'Lepro Wellness Center Ottawa - Physiotherapy & Wellness Services',
+        alt: 'LePro Wellness Center Ottawa - Physiotherapy & Wellness Services',
         type: 'image/png',
       },
       {
         url: 'https://leprowellness.ca/logoo.png',
         width: 800,
         height: 600,
-        alt: 'Lepro Wellness Center Logo',
+        alt: 'LePro Wellness Center Logo',
         type: 'image/png',
       },
       {
         url: 'https://leprowellness.ca/logoo.png',
         width: 400,
         height: 400,
-        alt: 'Lepro Wellness Center Logo',
+        alt: 'LePro Wellness Center Logo',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lepro Wellness Center Ottawa | Physiotherapy & Wellness',
+    title: 'LePro Wellness Center Ottawa | Physiotherapy & Wellness',
     description: 'Expert physiotherapy, massage therapy & athletic therapy in Ottawa, Ontario. IFHP coverage accepted.',
     images: ['https://leprowellness.ca/logoo.png'],
     creator: '@leprowellness',

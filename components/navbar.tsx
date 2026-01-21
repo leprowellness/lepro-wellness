@@ -39,7 +39,7 @@ const Navbar = () => {
   />
   <div className="flex flex-col leading-tight">
     <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-      Lepro Wellness Center
+      LePro Wellness Center
     </h1>
     <p className="text-xs sm:text-sm md:text-base text-gray-600">
       Your Path to Better Health

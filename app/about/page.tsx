@@ -2,7 +2,7 @@ import { Heart, Target, Users, Award, CheckCircle, Activity, BriefcaseMedical, H
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Lepro Wellness Center Ottawa | Expert Healthcare Team Ontario",
+  title: "About LePro Wellness Center Ottawa | Expert Healthcare Team Ontario",
   description: "Learn about Ottawa's premier wellness center. Expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP coverage accepted. Licensed Canadian healthcare professionals.",
   keywords: [
     "about lepro wellness center",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "wellness center about us"
   ],
   openGraph: {
-    title: "About Lepro Wellness Center Ottawa | Expert Healthcare Team",
+    title: "About LePro Wellness Center Ottawa | Expert Healthcare Team",
     description: "Learn about Ottawa's premier wellness center offering expert physiotherapy, massage therapy, and athletic therapy services.",
     url: 'https://leprowellness.ca/about',
   },
@@ -66,14 +66,14 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-gray-700 leading-relaxed">
           <p>
-            Welcome to <strong>Lepro Wellness Center</strong>, your comprehensive destination for wellness,
+            Welcome to <strong>LePro Wellness Center</strong>, your comprehensive destination for wellness,
             rehabilitation, and mental health support in <strong>Ottawa, Ontario</strong>. We are dedicated to helping
             our community achieve better physical, mental, and emotional well-being through a variety of specialized
             services. Individuals covered by Interim Federal Health Program (IFHP coverage with UCI number) are welcome
             to get their treatment at our wellness center.
           </p>
           <p>
-            At Lepro Wellness Center, we believe in a holistic approach to health. Our experienced team offers a range of
+            At LePro Wellness Center, we believe in a holistic approach to health. Our experienced team offers a range of
             services to support injury recovery, pain management, stress relief, and mental wellness. Our mission is to
             empower you with the tools and care you need to live a healthy, balanced life. We take pride in being a
             trusted wellness center in Ottawa, bringing together skilled professionals across physiotherapy, athletic
