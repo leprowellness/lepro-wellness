@@ -3,27 +3,21 @@ import { Activity, CheckCircle, ArrowRight, Clock, Users, Award } from "lucide-r
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Ottawa | Expert Physical Therapy Services Ontario | LePro Wellness",
-  description: "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, MVA rehabilitation. IFHP coverage accepted. Licensed physiotherapists.",
-  keywords: [
-    "physiotherapy ottawa",
-    "physical therapy ottawa ontario",
-    "physiotherapist ottawa",
-    "injury rehabilitation ottawa",
-    "MVA physiotherapy ottawa",
-    "IFHP physiotherapy",
-    "back pain treatment ottawa",
-    "sports injury physiotherapy",
-    "chronic pain management ottawa",
-    "post surgical rehabilitation ottawa"
-  ],
+  title: "Physiotherapy in Ottawa, Ontario | LePro Wellness",
+  description:
+    "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, MVA rehabilitation, and recovery. IFHP coverage accepted.",
+
+  alternates: { canonical: "/services/physiotherapy" },
+
   openGraph: {
-    title: "Physiotherapy Ottawa | Expert Physical Therapy Services",
-    description: "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, and rehabilitation.",
-    url: 'https://leprowellness.ca/services/physiotherapy',
+    title: "Physiotherapy in Ottawa, Ontario | LePro Wellness",
+    description:
+      "Expert physiotherapy services in Ottawa for injury rehabilitation, pain relief, and MVA recovery.",
+    url: "/services/physiotherapy",
+    siteName: "LePro Wellness",
+    type: "website",
   },
 }
-
 export default function Physiotherapy() {
   const benefits = [
     "Pain relief and management",

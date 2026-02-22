@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LePro Wellness Center Ottawa | Expert Physiotherapy & Wellness Services",
     description: "Premier wellness center in Ottawa, Ontario. Expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP coverage accepted.",
-    url: 'https://leprowellness.ca',
+    url: '/',
     siteName: 'LePro Wellness Center',
     locale: 'en_CA',
     type: 'website',

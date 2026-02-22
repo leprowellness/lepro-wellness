@@ -1,6 +1,22 @@
 import Link from "next/link"
 import { Users, CheckCircle, ArrowRight, Shield, HeartPulse, Ambulance } from "lucide-react"
+import type{ Metadata } from "next"
 
+
+export const metadata: Metadata = {
+  title: "Accident Therapy in Ottawa, Ontario | Lepro Wellness",
+  description:
+    "Accident therapy in Ottawa, Ontario at Lepro Wellness. Support recovery after a motor vehicle accident with personalized rehab focused on pain relief, mobility, and function.",
+  alternates: { canonical: "/services/accidental-therapy" },
+  openGraph: {
+    title: "Accident Therapy in Ottawa, Ontario | Lepro Wellness",
+    description:
+      "Support your recovery after an accident with personalized therapy focused on pain relief, mobility, and return to daily activities.",
+    url: "/services/accidental-therapy",
+    siteName: "Lepro Wellness",
+    type: "website",
+  },
+}
 export default function AccidentalTherapy() {
   const benefits = [
     "Comprehensive injury assessment",

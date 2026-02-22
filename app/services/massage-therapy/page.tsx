@@ -1,5 +1,25 @@
 import Link from "next/link"
 import { Heart, CheckCircle, ArrowRight, Sparkles, Wind, Droplets } from "lucide-react"
+import type { Metadata } from "next"
+
+
+
+export const metadata: Metadata = {
+  title: "Massage Therapy in Ottawa, Ontario | Lepro Wellness",
+  description:
+    "Professional massage therapy in Ottawa, Ontario at Lepro Wellness. Reduce pain, improve mobility, and book your session today.",
+
+  alternates: { canonical: "/services/massage-therapy" },
+
+  openGraph: {
+    title: "Massage Therapy in Ottawa, Ontario | Lepro Wellness",
+    description:
+      "Professional massage therapy in Ottawa, Ontario at Lepro Wellness. Reduce pain, improve mobility, and book your session today.",
+    url: "/services/massage-therapy",
+    siteName: "Lepro Wellness",
+    type: "website",
+  },
+};
 
 export default function MassageTherapy() {
   const benefits = [
@@ -73,11 +93,11 @@ export default function MassageTherapy() {
       <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
         <Heart className="w-8 h-8 text-white" />
       </div>
-      <h1 className="text-4xl md:text-5xl font-bold">Massage Therapy</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">Massage Therapy in Ottawa, Ontario for Back Pain & Stiffness</h1>
     </div>
 
     <p className="text-xl text-teal-50 mb-8 leading-relaxed">
-      Experience the healing power of touch with our therapeutic massage services designed to restore balance and wellness.
+       Dealing with lower back pain, neck stiffness, or tight muscles from long hours of sitting? Our massage therapy in Ottawa helps release tension, improve mobility, and support recovery with a personalized treatment plan.
     </p>
 
     <Link
@@ -145,6 +165,56 @@ export default function MassageTherapy() {
         </div>
       </section>
 
+
+      {/* Back Pain & Stiffness Section */}
+<section className="py-16 bg-white">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+        Massage Therapy for Back Pain & Stiffness in Ottawa
+      </h2>
+
+      <p className="text-lg text-gray-600 leading-relaxed mb-6">
+        Back pain and stiffness often come from muscle tension, prolonged sitting, stress, or overuse. Massage
+        therapy can help by relaxing tight areas, improving circulation, and restoring comfortable movement —
+        especially when your treatment is tailored to your symptoms and goals.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="rounded-2xl border border-gray-200 p-5">
+          <h3 className="font-semibold text-gray-900 mb-2">Common issues we help with</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>• Lower back tightness & stiffness</li>
+            <li>• Neck and shoulder tension</li>
+            <li>• Posture-related muscle pain</li>
+            <li>• Exercise soreness & recovery</li>
+          </ul>
+        </div>
+
+        <div className="rounded-2xl border border-gray-200 p-5">
+          <h3 className="font-semibold text-gray-900 mb-2">What you may feel after</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>• Less tension and improved range of motion</li>
+            <li>• Easier movement during daily activities</li>
+            <li>• Reduced stress and better sleep</li>
+            <li>• A clearer recovery plan (60/90 min options)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-8 flex justify-center">
+        <Link
+          href="/contact"
+          className="inline-flex items-center space-x-2 px-7 py-3 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
+        >
+          <span>Book Massage Therapy</span>
+          <ArrowRight className="w-5 h-5" />
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Benefits */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,7 +242,7 @@ export default function MassageTherapy() {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-600 p-1">
                 <img
                   src="/massage-therapy-benefits-wellness.jpg"
-                  alt="Massage Benefits"
+                  alt="Massage therapy session benefits at Lepro Wellness"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
