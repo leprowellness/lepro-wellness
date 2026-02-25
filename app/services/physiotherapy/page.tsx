@@ -3,9 +3,9 @@ import { Activity, CheckCircle, ArrowRight, Clock, Users, Award } from "lucide-r
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Physiotherapy in Ottawa, Ontario | LePro Wellness",
+  title: "Physiotherapy in Ottawa, ON | Expert Injury Recovery & Pain Relief",
   description:
-    "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, pain management, MVA rehabilitation, and recovery. IFHP coverage accepted.",
+    "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, chronic pain, MVA rehabilitation, and sports recovery. IFHP & WSIB coverage accepted.",
 
   alternates: { canonical: "/services/physiotherapy" },
 
@@ -20,41 +20,41 @@ export const metadata: Metadata = {
 }
 export default function Physiotherapy() {
   const benefits = [
-    "Pain relief and management",
-    "Improved mobility and flexibility",
-    "Faster recovery from injuries",
+    "Effective pain relief and management",
+    "Improved mobility and joint flexibility",
+    "Accelerated recovery from sports injuries",
     "Prevention of future injuries",
     "Enhanced athletic performance",
-    "Better posture and balance",
+    "Better posture and functional balance",
   ]
 
   const conditions = [
-    "Back and neck pain",
+    "Lower back and neck pain",
     "Sports injuries and rehabilitation",
-    "Motor vehicle accident (MVA) injuries",
-    "Workplace injury rehabilitation",
+    "Motor vehicle accident (MVA) rehabilitation",
+    "Workplace injury recovery (WSIB)",
     "Post-surgical rehabilitation",
     "Arthritis and joint pain management",
-    "Neurological conditions",
-    "Chronic pain conditions",
-    "WSIB covered injuries",
+    "Neurological condition support",
+    "Chronic pain management",
+    "Tension headaches and migraines",
   ]
 
   const features = [
     {
       icon: Clock,
-      title: "Flexible Scheduling",
-      description: "Convenient appointment times to fit your busy lifestyle",
+      title: "Flexible Appointments",
+      description: "Convenient scheduling options to fit your busy Ottawa lifestyle",
     },
     {
       icon: Users,
-      title: "Expert Therapists",
-      description: "Certified professionals with years of experience",
+      title: "Certified Specialists",
+      description: "Licensed Canadian physiotherapists with extensive clinical experience",
     },
     {
       icon: Award,
-      title: "Proven Results",
-      description: "Evidence-based treatments with measurable outcomes",
+      title: "Evidence-Based Care",
+      description: "Science-backed treatments ensuring the best possible recovery outcomes",
     },
   ]
 
@@ -63,76 +63,95 @@ export default function Physiotherapy() {
       title: "Subsequent Physiotherapy",
       subtitle: "60 Minutes Follow-Up Visit - $100",
       description:
-        "This session is designed for follow-up care related to the same injury treated within the past four months. The therapist will assess your progress, address any ongoing concerns, and make necessary adjustments to your treatment plan to support continued recovery and improvement.",
+        "Dedicated follow-up care for ongoing injury treatment. We monitor your progress, adjust manual therapy techniques, and update your exercise program to ensure continuous improvement and long-term recovery.",
     },
     {
       title: "Physiotherapy Assessment",
-      subtitle: "60 Minutes Session - $200",
+      subtitle: "60 Minutes Initial Session - $200",
       description:
-        "During this session, the therapist will conduct a thorough evaluation to diagnose the injury or area of pain. Based on the assessment, a customized treatment plan will be developed to address your specific needs.",
+        "A comprehensive evaluation to identify the root cause of your pain or injury. Includes functional testing, diagnosis, and the creation of a personalized treatment plan tailored to your specific goals.",
     },
     {
-      title: "Online Physiotherapy / Rehab Follow Up Visit",
+      title: "Online Physiotherapy / Virtual Rehab",
       subtitle: "$100 - Follow-Up Consultation",
       description:
-        "This session is designed for a thorough review of your ongoing concerns or any recent injuries. Your therapist will assess your progress, address questions, and provide updates or modifications to your treatment plan through a secure virtual consultation.",
+        "Receive expert physiotherapy guidance from the comfort of your home. Perfect for exercise review, progress tracking, and professional advice through a secure, high-quality video platform.",
     },
     {
-      title: "Intramuscular Stimulation / Dry Needling",
-      subtitle: "60-Minute Physiotherapy Session - $140",
+      title: "Dry Needling / IMS",
+      subtitle: "60-Minute Specialized Session - $140",
       description:
-        "Intramuscular Stimulation (IMS), also known as dry needling, is an effective technique to treat neuropathic pain caused by nerve irritation. It targets deep muscle issues, providing relief and promoting healing.",
+        "Intramuscular Stimulation (IMS) targets deep muscle trigger points and neuropathic pain. An effective technique for releasing chronic muscle tension and accelerating the healing process.",
+    },
+  ]
+
+  const faq = [
+    {
+      q: "Do I need a doctor's referral for physiotherapy in Ottawa?",
+      a: "No, in Ontario, you have direct access to physiotherapy. However, some private insurance plans may require a referral for reimbursement, so it's always best to check with your provider.",
+    },
+    {
+      q: "How many physiotherapy sessions will I need?",
+      a: "The number of sessions depends on the nature of your injury or condition. During your initial assessment, your therapist will provide a recommended treatment timeline based on your recovery goals.",
+    },
+    {
+      q: "Does LePro Wellness accept IFHP and WSIB?",
+      a: "Yes, we are a registered provider for IFHP (Interim Federal Health Program) and WSIB (Workplace Safety and Insurance Board). We handle the necessary paperwork to make your recovery as stress-free as possible.",
+    },
+    {
+      q: "What should I wear to my first physiotherapy appointment?",
+      a: "Wear comfortable, loose-fitting clothing that allows us to easily access the area being treated. For example, shorts for knee injuries or a tank top for shoulder issues are ideal.",
     },
   ]
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-     <section className="relative md:min-h-[600px] text-white py-32">
-  {/* Background Video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/physiotherapy-background.mp4" type="video/mp4" />
-  </video>
-  {/* Overlay for readability */}
-  <div className="absolute inset-0 bg-black/50"></div>
+      <section className="relative md:min-h-[600px] text-white py-32">
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/physiotherapy-background.mp4" type="video/mp4" />
+        </video>
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-  {/* Content */}
-  <div className="relative max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-    <div className="flex justify-center items-center space-x-3 mb-6">
-      <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-        <Activity className="w-8 h-8 text-white" />
-      </div>
-      <h1 className="text-4xl md:text-5xl font-bold">Physiotherapy</h1>
-    </div>
+        {/* Content */}
+        <div className="relative max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center items-center space-x-3 mb-6">
+            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+              <Activity className="w-8 h-8 text-white" />
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold">Physiotherapy in Ottawa for Injury Recovery</h1>
+          </div>
 
-    <p className="text-xl text-emerald-50 mb-8 leading-relaxed">
-      Expert physiotherapy services in Ottawa, Ontario. Restore movement, reduce pain, and improve your quality of life with our licensed Canadian physiotherapists. IFHP coverage accepted.
-    </p>
+          <p className="text-xl text-emerald-50 mb-8 leading-relaxed">
+            Restore movement, eliminate pain, and reclaim your quality of life. Our expert Ottawa physiotherapists provide personalized, evidence-based care for back pain, sports injuries, and MVA recovery.
+          </p>
 
-    <Link
-      href="/contact"
-      className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300"
-    >
-      <span>Book Appointment</span>
-      <ArrowRight className="w-5 h-5" />
-    </Link>
-  </div>
-</section>
+          <Link
+            href="/contact"
+            className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
+            <span>Start Your Recovery</span>
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
 
 
       {/* Services Section */}
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Physiotherapy Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-display">Specialized Physiotherapy Treatments</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore our range of physiotherapy treatments tailored to your needs.
+              Choose from our range of professional physiotherapy services designed to address your unique health concerns.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -144,7 +163,7 @@ export default function Physiotherapy() {
               >
                 <div>
                   <h3 className="text-2xl font-semibold text-emerald-700 mb-2">{service.title}</h3>
-                  <p className="text-md text-gray-500 mb-4">{service.subtitle}</p>
+                  <p className="text-md text-gray-500 mb-4 font-medium">{service.subtitle}</p>
                   <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                 </div>
                 <div>
@@ -152,7 +171,7 @@ export default function Physiotherapy() {
                     href="/contact"
                     className="inline-flex items-center space-x-2 px-6 py-3 bg-emerald-600 text-white font-semibold rounded-full hover:bg-emerald-700 hover:shadow-lg transition-all duration-300"
                   >
-                    <span>Book Now</span>
+                    <span>Book Your Session</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -192,7 +211,7 @@ export default function Physiotherapy() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Benefits */}
             <div className="animate-slide-left">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Benefits of Physiotherapy</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Physiotherapy Works</h2>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div
@@ -209,7 +228,7 @@ export default function Physiotherapy() {
 
             {/* Conditions */}
             <div className="animate-slide-right">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Conditions We Treat</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Conditions We Help Manage</h2>
               <div className="space-y-4">
                 {conditions.map((condition, index) => (
                   <div
@@ -227,18 +246,47 @@ export default function Physiotherapy() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Physiotherapy FAQ</h2>
+            <p className="text-gray-600 mt-3 text-lg">
+              Frequently asked questions about our physiotherapy services in Ottawa.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faq.map((item, idx) => (
+              <details
+                key={idx}
+                className="group bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <summary className="cursor-pointer list-none flex items-center justify-between gap-4">
+                  <h3 className="text-lg font-semibold text-gray-900">{item.q}</h3>
+                  <span className="text-emerald-700 font-bold group-open:rotate-45 transition-transform duration-200">
+                    +
+                  </span>
+                </summary>
+                <p className="text-gray-700 mt-4 leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">Start Your Recovery Journey</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">Ready to Move Pain-Free?</h2>
           <p className="text-xl mb-8 text-emerald-50 animate-slide-up delay-100">
-            Book your physiotherapy session today and take the first step towards better health.
+            Book your physiotherapy assessment today and take the first step toward lasting health and mobility.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-scale-in delay-200"
           >
-            <span>Schedule Appointment</span>
+            <span>Schedule Your Appointment</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -246,3 +294,4 @@ export default function Physiotherapy() {
     </div>
   )
 }
+

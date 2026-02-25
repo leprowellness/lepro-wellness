@@ -1,10 +1,17 @@
 import { MongoClient, type Db } from "mongodb"
+import { getMongoUri } from "./utils";
 
-if (!process.env.MONGODB_URI) {
-  throw new Error("Please add your MongoDB URI to .env.local")
-}
+// if (!process.env.MONGODB_URI) {
+//   throw new Error("Please add your MongoDB URI to .env.local")
+// }
+
+
+// Uncommetn this fucntion when connecting to mongodb
+getMongoUri();
 
 const uri = process.env.MONGODB_URI
+
+
 const options = {}
 
 let client: MongoClient
