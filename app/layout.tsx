@@ -134,9 +134,10 @@ export const metadata: Metadata = {
   },
   verification: {
     
-    google: "kOUWVI9EEweW3gIw_aAX6ice26_DOkAw1zdWxdXGigs",
+    google: "x0iUP52O2ujRz8JnOk2B6fD9Rd_8eHIzUSvZQjzrk-A",
   },
 };
+{/* <meta name="google-site-verification" content="x0iUP52O2ujRz8JnOk2B6fD9Rd_8eHIzUSvZQjzrk-A" /> */}
 
 {/* <meta name="google-site-verification" content="kOUWVI9EEweW3gIw_aAX6ice26_DOkAw1zdWxdXGigs" /> */}
 export default function RootLayout({
