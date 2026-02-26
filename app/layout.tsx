@@ -133,10 +133,12 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    
+    google: "kOUWVI9EEweW3gIw_aAX6ice26_DOkAw1zdWxdXGigs",
   },
 };
 
+{/* <meta name="google-site-verification" content="kOUWVI9EEweW3gIw_aAX6ice26_DOkAw1zdWxdXGigs" /> */}
 export default function RootLayout({
   children,
 }: Readonly<{
