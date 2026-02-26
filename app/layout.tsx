@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://leprowellness.ca'),
+  metadataBase: new URL('https://www.leprowellnesscenter.ca'),
   alternates: {
     canonical: '/',
   },

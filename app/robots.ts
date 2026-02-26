@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/'],
     },
-    sitemap: 'https://leprowellness.ca/sitemap.xml',
+    sitemap: 'https://www.leprowellnesscenter.ca/sitemap.xml',
   }
 }
