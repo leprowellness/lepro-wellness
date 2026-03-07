@@ -1,47 +1,71 @@
+import { Metadata } from "next";
+import HomeContent from "@/components/home-content";
+import { Activity, Award, Heart, Users } from "lucide-react";
 
-"use client"; // Required for useState/useEffect
-import Link from "next/link";
-import {
-  Activity,
-  Heart,
-  Users,
-  Award,
-  ArrowRight,
-  CheckCircle,
-} from "lucide-react";
-
-import { useState, useEffect } from "react";
-
+export const metadata: Metadata = {
+  title: "Best Physiotherapy Ottawa | Expert Wellness & Rehab Clinic",
+  description:
+    "Top-rated Ottawa wellness clinic offering expert physiotherapy, registered massage therapy, and athletic therapy. Specialized in sports injury rehab and MVA recovery. IFHP accepted. Book your assessment today!",
+  keywords: [
+    "physiotherapy Ottawa",
+    "massage therapy Ottawa",
+    "athletic therapy Ottawa",
+    "MVA rehabilitation Ottawa",
+    "IFHP physiotherapy",
+    "sports injury rehab Ottawa",
+    "wellness center Ottawa",
+    "physiotherapist near me Ottawa",
+    "registered massage therapist Ottawa",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Best Physiotherapy Ottawa | LePro Wellness Center",
+    description:
+      "Restore your movement and reclaim your life at Ottawa's premier wellness destination. Expert physiotherapy, massage, and athletic therapy services.",
+    url: "/",
+    siteName: "LePro Wellness Center",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LePro Wellness Center Ottawa | Expert Physiotherapy",
+    description: "Expert physiotherapy, massage therapy, and athletic therapy in Ottawa. IFHP coverage accepted.",
+  },
+};
 
 export default function Home() {
   const services = [
     {
       title: "Physiotherapy Ottawa",
       description:
-        "Restore movement and function with expert physiotherapy treatments. IFHP coverage accepted.",
-      icon: Activity,
+        "Restore movement and function with expert physiotherapy treatments for injury recovery, back pain, and chronic conditions. IFHP coverage accepted.",
+      icon: "Activity",
       link: "/services/physiotherapy",
       color: "from-emerald-500 to-teal-600",
     },
     {
       title: "Athletic Therapy",
       description:
-        "Specialized care for athletes to enhance performance and recovery. Sports medicine expertise.",
-      icon: Award,
+        "Specialized Ottawa athletic therapy for sports injuries, performance enhancement, and rapid rehabilitation. Expert care for athletes of all levels.",
+      icon: "Award",
       link: "/services/athletic-therapy",
       color: "from-blue-500 to-cyan-600",
     },
     {
-      title: "Massage Therapy",
-      description: "Registered massage therapy for stress relief and healing. Insurance coverage available.",
-      icon: Heart,
+      title: "Massage Therapy Ottawa",
+      description:
+        "Registered massage therapy (RMT) in Ottawa for stress relief, healing, and pain management. Insurance direct billing available.",
+      icon: "Heart",
       link: "/services/massage-therapy",
       color: "from-teal-500 to-emerald-600",
     },
     {
       title: "MVA Rehabilitation",
-      description: "Comprehensive motor vehicle accident rehabilitation and injury recovery services.",
-      icon: Users,
+      description:
+        "Comprehensive Ottawa MVA rehabilitation and injury recovery services for motor vehicle accident victims. We help you heal faster.",
+      icon: "Users",
       link: "/services/accidental-therapy",
       color: "from-cyan-500 to-blue-600",
     },
@@ -58,219 +82,5 @@ export default function Home() {
     "Bilingual Services Available",
   ];
 
-
-  // Carousel images
-  const carouselImages = ["/1.jpeg", "/2.jpeg", "/3.jpeg", "/4.jpeg"];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
-    }, 3000); // 3 seconds per image
-    return () => clearInterval(interval);
-  }, []);
-
-
-  return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative text-white overflow-hidden">
-        <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-          {/* Background Video */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/wellness-bg.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Content */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-down text-balance text-white">
-                Welcome to LePro Wellness Center Ottawa
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100 text-pretty">
-                Ottawa's premier wellness destination. Expert physiotherapy, massage therapy, and athletic therapy services. IFHP coverage accepted. Your journey to optimal health starts here.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in delay-200">
-                <Link
-                  href="/contact"
-                  className="px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2"
-                >
-                  <span>Book Appointment</span>
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="/about"
-                  className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-emerald-600 hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-300"></div>
-      </section>
-
-      {/* Our Philosophy Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-slide-up">
-            Our Philosophy
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-up delay-100">
-            At LePro Wellness Center in Ottawa, Ontario, we believe true healing goes beyond
-            physical recovery. Our philosophy combines modern Canadian healthcare standards
-            with a holistic approach that nurtures the body, mind, and spirit.
-            Every treatment plan is tailored to empower our clients, restore
-            balance, and inspire long-term wellness. We proudly serve the Ottawa community
-            and accept IFHP coverage for eligible patients.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose Us?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Choosing LePro Wellness Center means choosing compassionate care
-                that focuses on you. We combine advanced therapy techniques with
-                personalized attention, ensuring every client feels supported on
-                their journey. Our dedicated team is here not only to treat
-                conditions but to transform lives with integrity, innovation,
-                and genuine care.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {features.map((feature, index) => (
-                  <div
-                    key={feature}
-                    className="flex items-start space-x-3 animate-slide-up"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700 font-medium">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="relative animate-slide-right">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-600 p-1">
-                <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
-                  <img
-
-                    src="/4.jpeg"
-                    alt="Wellness Center"
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full blur-2xl opacity-50 animate-pulse"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-slide-up">
-              Our Services
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-slide-up delay-100">
-              Comprehensive wellness solutions tailored to your unique needs
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Link
-                  key={service.title}
-                  href={service.link}
-                  className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 hover:-translate-y-2 animate-scale-in"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="flex items-center text-emerald-600 font-medium group-hover:gap-2 transition-all duration-300">
-                    <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
- {/* Carousel Section */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative w-full h-[500px] overflow-hidden rounded-2xl shadow-lg">
-            {carouselImages.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`Carousel ${index + 1}`}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-                  index === currentIndex ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">
-            Ready to Start Your Wellness Journey?
-          </h2>
-          <p className="text-xl mb-8 text-emerald-50 animate-slide-up delay-100">
-            Book your appointment today and take the first step towards a
-            healthier, happier you.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-scale-in delay-200"
-          >
-            <span>Contact Us Now</span>
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-      </section>
-    </div>
-  );
+  return <HomeContent services={services} features={features} />;
 }

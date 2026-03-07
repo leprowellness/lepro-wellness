@@ -124,7 +124,7 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  Suite 104 - 2 Gurdwara Road, Ottawa ON K2E 1A2, Canada
+                  2 Gurdwara Rd, Ottawa, ON K2E 1A2, Canada
                 </span>
               </li>
               <li className="flex items-center space-x-3">
