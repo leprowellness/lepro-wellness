@@ -5,19 +5,39 @@ import type { Metadata } from "next"
 
 
 export const metadata: Metadata = {
-  title: "Massage Therapy in Ottawa, Ontario | Lepro Wellness",
+  title: "Massage Therapy Ottawa | Registered Massage Therapist (RMT) | LePro Wellness",
   description:
-    "Professional massage therapy in Ottawa, Ontario at Lepro Wellness. Reduce pain, improve mobility, and book your session today.",
-
+    "Registered massage therapy (RMT) in Ottawa, Ontario. Relieve back pain, neck stiffness, and muscle tension. Insurance direct billing available. Book your session at LePro Wellness today.",
+  keywords: [
+    "massage therapy Ottawa",
+    "registered massage therapist Ottawa",
+    "RMT Ottawa",
+    "massage therapist Ottawa",
+    "deep tissue massage Ottawa",
+    "relaxation massage Ottawa",
+    "back pain massage Ottawa",
+    "neck pain massage Ottawa",
+    "sports massage Ottawa",
+    "therapeutic massage Ottawa",
+    "massage therapy near me Ottawa",
+    "best massage therapist Ottawa",
+    "Ottawa massage clinic",
+    "insurance massage therapy Ottawa",
+    "direct billing massage Ottawa",
+  ],
   alternates: { canonical: "/services/massage-therapy" },
-
   openGraph: {
-    title: "Massage Therapy in Ottawa, Ontario | Lepro Wellness",
+    title: "Massage Therapy Ottawa | Registered RMT | LePro Wellness",
     description:
-      "Professional massage therapy in Ottawa, Ontario at Lepro Wellness. Reduce pain, improve mobility, and book your session today.",
+      "Registered massage therapy in Ottawa for back pain, neck stiffness, and stress relief. Insurance direct billing available.",
     url: "/services/massage-therapy",
-    siteName: "Lepro Wellness",
+    siteName: "LePro Wellness Center",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Massage Therapy Ottawa | RMT | LePro Wellness",
+    description: "Registered massage therapy in Ottawa. Relieve pain, reduce stress, and improve mobility. Book today.",
   },
 };
 

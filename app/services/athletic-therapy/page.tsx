@@ -3,19 +3,38 @@ import { Award, CheckCircle, ArrowRight, Target, TrendingUp, Shield } from "luci
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Athletic Therapy in Ottawa, ON | Sports Rehab & Performance Enrichment",
+  title: "Athletic Therapy Ottawa | Sports Injury Rehab & Recovery | LePro Wellness",
   description:
-    "Expert athletic therapy in Ottawa, Ontario. We specialize in sports injury rehabilitation, performance conditioning, and injury prevention for athletes of all levels.",
-
+    "Expert athletic therapy in Ottawa, Ontario. Specialized sports injury rehabilitation, performance conditioning, and injury prevention for athletes of all levels. Insurance accepted.",
+  keywords: [
+    "athletic therapy Ottawa",
+    "athletic therapist Ottawa",
+    "sports injury rehab Ottawa",
+    "sports therapy Ottawa",
+    "sports rehabilitation Ottawa",
+    "sports injury treatment Ottawa",
+    "performance training Ottawa",
+    "injury prevention Ottawa",
+    "return to sport Ottawa",
+    "athletic therapy near me Ottawa",
+    "Ottawa sports injury clinic",
+    "Ottawa athletic therapist",
+    "strength conditioning Ottawa",
+    "functional movement Ottawa",
+  ],
   alternates: { canonical: "/services/athletic-therapy" },
-
   openGraph: {
-    title: "Athletic Therapy in Ottawa, Ontario | Lepro Wellness",
+    title: "Athletic Therapy Ottawa | Sports Injury Rehab | LePro Wellness",
     description:
-      "Expert athletic therapy services in Ottawa for sports recovery, injury prevention, and performance enhancement.",
+      "Expert athletic therapy in Ottawa for sports injury rehab, performance conditioning, and injury prevention.",
     url: "/services/athletic-therapy",
-    siteName: "Lepro Wellness",
+    siteName: "LePro Wellness Center",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Athletic Therapy Ottawa | LePro Wellness",
+    description: "Expert sports injury rehab and athletic therapy in Ottawa. Performance conditioning for all athletes.",
   },
 }
 
@@ -77,6 +96,24 @@ export default function AthleticTherapy() {
 
   return (
     <div className="min-h-screen">
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faq.map((item) => ({
+              "@type": "Question",
+              "name": item.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.a,
+              },
+            })),
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative md:min-h-[600px] text-white py-32">
         {/* Background Video */}

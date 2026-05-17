@@ -3,25 +3,37 @@ import { Users, CheckCircle, ArrowRight, Shield, HeartPulse, Ambulance } from "l
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Accidental Injury & MVA Rehab in Ottawa | Lepro Wellness",
+  title: "MVA Rehabilitation Ottawa | Car Accident Injury Therapy | LePro Wellness",
   description:
-    "Accidental injury therapy in Ottawa including Motor Vehicle Accident (MVA) rehab, sports injury treatment, and personalized wellness therapy at Lepro Wellness.",
+    "Expert motor vehicle accident (MVA) rehabilitation and accidental injury therapy in Ottawa, Ontario. Whiplash, soft tissue injuries, and car accident recovery. Book your assessment today.",
+  keywords: [
+    "MVA rehabilitation Ottawa",
+    "motor vehicle accident therapy Ottawa",
+    "car accident physiotherapy Ottawa",
+    "whiplash treatment Ottawa",
+    "accident injury rehab Ottawa",
+    "MVA physiotherapy Ottawa",
+    "car accident recovery Ottawa",
+    "soft tissue injury Ottawa",
+    "accident rehab clinic Ottawa",
+    "Ottawa MVA clinic",
+    "slip and fall injury Ottawa",
+    "concussion treatment Ottawa",
+    "accident injury physiotherapy Ottawa",
+  ],
   alternates: { canonical: "/services/accidental-therapy" },
   openGraph: {
-    title: "Accidental Injury & MVA Rehab in Ottawa | Lepro Wellness",
+    title: "MVA Rehabilitation Ottawa | Car Accident Injury Therapy | LePro Wellness",
     description:
-      "Accidental injury therapy in Ottawa including Motor Vehicle Accident (MVA) rehab, sports injury treatment, and personalized wellness therapy at Lepro Wellness.",
+      "Expert MVA rehabilitation and accidental injury therapy in Ottawa. Whiplash, soft tissue injuries, and car accident recovery.",
     url: "/services/accidental-therapy",
-    siteName: "Lepro Wellness",
+    siteName: "LePro Wellness Center",
     type: "website",
-    images: ["/accidentalTherapy/ottawa_injury_rehab.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Accidental Injury & MVA Rehab in Ottawa | Lepro Wellness",
-    description:
-      "Accidental injury therapy in Ottawa including MVA rehab, sports injury treatment, and personalized wellness therapy.",
-    images: ["/accidentalTherapy/ottawa_injury_rehab.png"],
+    title: "MVA Rehabilitation Ottawa | LePro Wellness",
+    description: "Expert car accident and MVA rehabilitation in Ottawa. Whiplash, soft tissue injuries, and full recovery support.",
   },
 }
 

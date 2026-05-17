@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "LePro Wellness Center Ottawa | Physiotherapy, Massage & Athletic Therapy Canada",
   description:
     "Leading wellness center in Ottawa, Ontario offering expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP coverage accepted. Book your appointment today!",
-  generator: "v0.app",
+
   icons: {
     icon: [
       { url: "/logoo.png", sizes: "16x16", type: "image/png" },
@@ -44,31 +44,36 @@ export const metadata: Metadata = {
     ]
   },
   keywords: [
-    "physiotherapy Ottawa Ontario",
-    "massage therapy Ottawa Canada",
+    "wellness center Ottawa",
+    "wellness centre Ottawa",
+    "physiotherapy Ottawa",
+    "physiotherapist Ottawa",
+    "massage therapy Ottawa",
+    "registered massage therapist Ottawa",
     "athletic therapy Ottawa",
-    "wellness center Ottawa Ontario",
-    "rehabilitation Ottawa Canada",
-    "MVA therapy Ottawa",
+    "MVA rehabilitation Ottawa",
     "motor vehicle accident therapy Ottawa",
     "IFHP physiotherapy Ottawa",
-    "Ottawa physiotherapist",
-    "Ottawa wellness clinic",
-    "Ottawa massage clinic",
-    "physiotherapy near me Ottawa",
-    "best physiotherapy Ottawa",
-    "sports therapy Ottawa",
+    "WSIB physiotherapy Ottawa",
+    "sports injury rehab Ottawa",
+    "back pain treatment Ottawa",
+    "neck pain physiotherapy Ottawa",
     "injury rehabilitation Ottawa",
-    "chronic pain treatment Ottawa",
+    "chronic pain clinic Ottawa",
     "workplace injury therapy Ottawa",
-    "Ottawa health services",
-    "Ontario wellness center",
-    "Canadian physiotherapy clinic",
-    "Ottawa healthcare",
-    "rehabilitation services Ontario",
-    "therapeutic massage Ottawa",
-    "sports medicine Ottawa",
-    "physical therapy Ottawa Canada"
+    "physiotherapy near me Ottawa",
+    "best physiotherapy clinic Ottawa",
+    "Ottawa health clinic",
+    "Ottawa rehabilitation center",
+    "Ottawa Ontario wellness",
+    "Nepean physiotherapy",
+    "Barrhaven physiotherapy",
+    "Kanata physiotherapy",
+    "Gloucester physiotherapy",
+    "South Ottawa physiotherapy",
+    "Ottawa sports medicine",
+    "Ottawa physical therapy",
+    "Ottawa holistic health"
   ],
   authors: [{ name: "LePro Wellness Center" }],
   creator: "LePro Wellness Center",
@@ -79,6 +84,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://www.leprowellnesscenter.ca'),
+  category: 'health',
   alternates: {
     canonical: '/',
   },
@@ -91,24 +97,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://leprowellness.ca/logoo.png',
+        url: 'https://www.leprowellnesscenter.ca/logoo.png',
         width: 1200,
         height: 630,
         alt: 'LePro Wellness Center Ottawa - Physiotherapy & Wellness Services',
-        type: 'image/png',
-      },
-      {
-        url: 'https://leprowellness.ca/logoo.png',
-        width: 800,
-        height: 600,
-        alt: 'LePro Wellness Center Logo',
-        type: 'image/png',
-      },
-      {
-        url: 'https://leprowellness.ca/logoo.png',
-        width: 400,
-        height: 400,
-        alt: 'LePro Wellness Center Logo',
         type: 'image/png',
       },
     ],
@@ -117,7 +109,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'LePro Wellness Center Ottawa | Physiotherapy & Wellness',
     description: 'Expert physiotherapy, massage therapy & athletic therapy in Ottawa, Ontario. IFHP coverage accepted.',
-    images: ['https://leprowellness.ca/logoo.png'],
+    images: ['https://www.leprowellnesscenter.ca/logoo.png'],
     creator: '@leprowellness',
     site: '@leprowellness',
   },
@@ -152,20 +144,16 @@ export default function RootLayout({
         <meta name="geo.placename" content="Ottawa" />
         <meta name="geo.position" content="45.4215;-75.6972" />
         <meta name="ICBM" content="45.4215, -75.6972" />
-        <link rel="canonical" href="https://leprowellness.ca" />
+        <link rel="canonical" href="https://www.leprowellnesscenter.ca" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/logoo.png" type="image/png" sizes="any" />
-        <link rel="icon" href="/logoo.png" type="image/png" sizes="16x16" />
         <link rel="icon" href="/logoo.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/logoo.png" type="image/png" sizes="48x48" />
-        <link rel="icon" href="/logoo.png" type="image/png" sizes="96x96" />
         <link rel="shortcut icon" href="/logoo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logoo.png" sizes="180x180" />
-        <link rel="apple-touch-icon-precomposed" href="/logoo.png" />
         <meta name="msapplication-TileImage" content="/logoo.png" />
         <meta name="msapplication-TileColor" content="#059669" />
         <meta name="theme-color" content="#059669" />
-        <meta property="og:logo" content="https://leprowellness.ca/logoo.png" />
+        <meta property="og:logo" content="https://www.leprowellnesscenter.ca/logoo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -175,10 +163,10 @@ export default function RootLayout({
               "name": "Lepro Wellness Center",
               "alternateName": "Lepro Wellness Center Ottawa",
               "description": "Leading wellness center in Ottawa, Ontario offering expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation.",
-              "url": "https://leprowellness.ca",
+              "url": "https://www.leprowellnesscenter.ca",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://leprowellness.ca/logoo.png",
+                "url": "https://www.leprowellnesscenter.ca/logoo.png",
                 "width": 400,
                 "height": 400,
                 "caption": "Lepro Wellness Center Logo"
@@ -186,19 +174,20 @@ export default function RootLayout({
               "image": [
                 {
                   "@type": "ImageObject",
-                  "url": "https://leprowellness.ca/logoo.png",
+                  "url": "https://www.leprowellnesscenter.ca/logoo.png",
                   "width": 400,
                   "height": 400,
                   "caption": "Lepro Wellness Center Logo"
                 }
               ],
               "telephone": "+16138785060",
+              "email": "admin@leprowellnesscenter.ca",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Your Street Address",
+                "streetAddress": "Suite 104 - 2 Gurdwara Road",
                 "addressLocality": "Ottawa",
                 "addressRegion": "ON",
-                "postalCode": "Your Postal Code",
+                "postalCode": "K2E 1A2",
                 "addressCountry": "CA"
               },
               "geo": {

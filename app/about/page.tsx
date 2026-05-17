@@ -2,19 +2,33 @@ import { Heart, Target, Users, Award, CheckCircle, Activity, BriefcaseMedical, H
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About LePro Wellness Center | Ottawa Healthcare Team",
+  title: "About LePro Wellness Center Ottawa | Physiotherapy & Wellness Clinic",
   description:
-    "Meet the team at LePro Wellness Center in Ottawa. Licensed healthcare professionals offering physiotherapy, massage therapy, and athletic therapy services.",
-
+    "Learn about LePro Wellness Center in Ottawa, Ontario. Licensed physiotherapists, registered massage therapists, and athletic therapists serving Ottawa since day one. IFHP & WSIB accepted.",
+  keywords: [
+    "about LePro Wellness Center Ottawa",
+    "Ottawa physiotherapy clinic about",
+    "wellness center Ottawa Ontario",
+    "IFHP clinic Ottawa",
+    "WSIB clinic Ottawa",
+    "Ottawa rehabilitation center",
+    "licensed physiotherapist Ottawa",
+    "Ottawa health clinic team",
+    "2 Gurdwara Road Ottawa",
+  ],
   alternates: { canonical: "/about" },
-
   openGraph: {
-    title: "About LePro Wellness Center | Ottawa Healthcare Team",
+    title: "About LePro Wellness Center | Ottawa's Trusted Wellness Clinic",
     description:
-      "Learn more about our licensed healthcare professionals and wellness services in Ottawa, Ontario.",
+      "Meet the licensed healthcare professionals at LePro Wellness Center in Ottawa. Expert physiotherapy, massage therapy, and athletic therapy services.",
     url: "/about",
     siteName: "LePro Wellness Center",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About LePro Wellness Center Ottawa",
+    description: "Licensed physiotherapists, RMTs, and athletic therapists serving Ottawa. IFHP & WSIB accepted.",
   },
 };
 

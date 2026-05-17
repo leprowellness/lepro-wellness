@@ -3,35 +3,44 @@ import HomeContent from "@/components/home-content";
 import { Activity, Award, Heart, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Best Physiotherapy Ottawa | Expert Wellness & Rehab Clinic",
+  title: "Wellness Center Ottawa | Physiotherapy, Massage & Athletic Therapy | LePro Wellness",
   description:
-    "Top-rated Ottawa wellness clinic offering expert physiotherapy, registered massage therapy, and athletic therapy. Specialized in sports injury rehab and MVA recovery. IFHP accepted. Book your assessment today!",
+    "Ottawa's top-rated wellness center. Expert physiotherapy, registered massage therapy, and athletic therapy at Suite 104 - 2 Gurdwara Road. IFHP & WSIB accepted. Book today!",
   keywords: [
+    "wellness center Ottawa",
+    "wellness centre Ottawa",
     "physiotherapy Ottawa",
     "massage therapy Ottawa",
     "athletic therapy Ottawa",
     "MVA rehabilitation Ottawa",
-    "IFHP physiotherapy",
+    "IFHP clinic Ottawa",
+    "WSIB physiotherapy Ottawa",
     "sports injury rehab Ottawa",
-    "wellness center Ottawa",
+    "wellness clinic Ottawa Ontario",
     "physiotherapist near me Ottawa",
     "registered massage therapist Ottawa",
+    "Ottawa health clinic",
+    "Ottawa rehabilitation center",
+    "best wellness center Ottawa",
+    "Ottawa physiotherapy clinic",
+    "Nepean wellness center",
+    "South Ottawa physiotherapy",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Best Physiotherapy Ottawa | LePro Wellness Center",
+    title: "Wellness Center Ottawa | LePro Wellness | Physiotherapy & Massage",
     description:
-      "Restore your movement and reclaim your life at Ottawa's premier wellness destination. Expert physiotherapy, massage, and athletic therapy services.",
+      "Ottawa's top-rated wellness center offering physiotherapy, massage therapy, and athletic therapy. IFHP & WSIB accepted. Book your appointment today.",
     url: "/",
     siteName: "LePro Wellness Center",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LePro Wellness Center Ottawa | Expert Physiotherapy",
-    description: "Expert physiotherapy, massage therapy, and athletic therapy in Ottawa. IFHP coverage accepted.",
+    title: "LePro Wellness Center Ottawa | Physiotherapy & Massage Therapy",
+    description: "Ottawa's top-rated wellness center. Expert physiotherapy, massage therapy & athletic therapy. IFHP accepted.",
   },
 };
 

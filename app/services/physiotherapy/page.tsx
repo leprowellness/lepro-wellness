@@ -3,19 +3,42 @@ import { Activity, CheckCircle, ArrowRight, Clock, Users, Award } from "lucide-r
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Physiotherapy in Ottawa, ON | Expert Injury Recovery & Pain Relief",
+  title: "Physiotherapy Ottawa | #1 Rated Physio Clinic | LePro Wellness",
   description:
-    "Professional physiotherapy services in Ottawa, Ontario. Expert treatment for injuries, chronic pain, MVA rehabilitation, and sports recovery. IFHP & WSIB coverage accepted.",
-
+    "Top-rated physiotherapy clinic in Ottawa, Ontario. Expert treatment for back pain, sports injuries, MVA rehab, and chronic pain. IFHP & WSIB accepted. Book your assessment today.",
+  keywords: [
+    "physiotherapy Ottawa",
+    "physiotherapist Ottawa",
+    "physio Ottawa",
+    "physiotherapy clinic Ottawa",
+    "back pain physiotherapy Ottawa",
+    "sports injury physiotherapy Ottawa",
+    "MVA physiotherapy Ottawa",
+    "WSIB physiotherapy Ottawa",
+    "IFHP physiotherapy Ottawa",
+    "dry needling Ottawa",
+    "IMS therapy Ottawa",
+    "chronic pain physiotherapy Ottawa",
+    "neck pain treatment Ottawa",
+    "physiotherapy near me Ottawa",
+    "best physiotherapist Ottawa",
+    "Ottawa physio clinic",
+    "Nepean physiotherapy",
+    "South Ottawa physio",
+  ],
   alternates: { canonical: "/services/physiotherapy" },
-
   openGraph: {
-    title: "Physiotherapy in Ottawa, Ontario | LePro Wellness",
+    title: "Physiotherapy Ottawa | Expert Injury Recovery | LePro Wellness",
     description:
-      "Expert physiotherapy services in Ottawa for injury rehabilitation, pain relief, and MVA recovery.",
+      "Top-rated physiotherapy in Ottawa for back pain, sports injuries, MVA rehab, and chronic pain. IFHP & WSIB accepted.",
     url: "/services/physiotherapy",
-    siteName: "LePro Wellness",
+    siteName: "LePro Wellness Center",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Physiotherapy Ottawa | LePro Wellness Center",
+    description: "Expert physiotherapy in Ottawa for injury recovery, back pain, and MVA rehab. IFHP & WSIB accepted.",
   },
 }
 export default function Physiotherapy() {
@@ -106,6 +129,24 @@ export default function Physiotherapy() {
 
   return (
     <div className="min-h-screen">
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faq.map((item) => ({
+              "@type": "Question",
+              "name": item.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.a,
+              },
+            })),
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative md:min-h-[600px] text-white py-32">
         {/* Background Video */}
