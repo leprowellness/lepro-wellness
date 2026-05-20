@@ -62,13 +62,15 @@ const Navbar = () => {
             </Link>
 
             {/* Services Dropdown */}
-            <div className="relative group">
+            <div
+              className="relative group"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
               <button
                 className={`flex items-center space-x-1 text-base font-medium transition-all duration-300 hover:text-emerald-600 ${
                   pathname.startsWith("/services") ? "text-emerald-600" : "text-gray-700"
                 }`}
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
               >
                 <span>Services</span>
                 <ChevronDown
@@ -80,18 +82,19 @@ const Navbar = () => {
 
               {/* Dropdown */}
               <div
-                className={`absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
+                className={`absolute top-full left-0 w-56 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
                   isServicesOpen
                     ? "opacity-100 visible translate-y-0"
                     : "opacity-0 invisible -translate-y-2"
                 }`}
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
               >
-                {services.map((service, index) => (
+                {/* invisible bridge to prevent gap-triggered close */}
+                <div className="h-2 w-full" />
+                {services.map((service) => (
                   <Link
                     key={service.path}
                     href={service.path}
+                    onClick={() => setIsServicesOpen(false)}
                     className={`block px-4 py-3 text-sm font-medium transition-all duration-200 hover:bg-emerald-50 hover:text-emerald-600 hover:pl-6 ${
                       isActive(service.path) ? "bg-emerald-50 text-emerald-600" : "text-gray-700"
                     }`}
