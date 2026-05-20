@@ -145,7 +145,7 @@ export default function Contact() {
             })}
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Form + Map */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="animate-slide-left">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Book Appointment</h2>
@@ -314,7 +314,81 @@ export default function Contact() {
                 )}
               </form>
             </div>
+
+            {/* Google Maps Embed */}
+            <div className="animate-slide-right">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Find Us</h2>
+              <div className="rounded-2xl overflow-hidden shadow-lg mb-6">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.4!2d-75.7272!3d45.3352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07dad34b8baf%3A0x66ccde9b5634735!2sLePro%20Wellness%20Center!5e0!3m2!1sen!2sca!4v1"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="LePro Wellness Center Ottawa Location - Suite 104, 2 Gurdwara Rd"
+                  aria-label="Google Maps showing LePro Wellness Center at Suite 104 - 2 Gurdwara Road, Ottawa ON K2E 1A2"
+                />
+              </div>
+              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 space-y-3">
+                <h3 className="font-semibold text-gray-900 text-lg">LePro Wellness Center</h3>
+                <p className="text-gray-600 text-sm">Suite 104 - 2 Gurdwara Rd<br />Ottawa, ON K2E 1A2</p>
+                <p className="text-gray-600 text-sm">Mon–Fri: 9:00 AM – 4:00 PM</p>
+                <p className="text-gray-600 text-sm">
+                  <a href="tel:+16138785060" className="text-emerald-600 font-medium hover:underline">+1 (613) 878-5060</a>
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-5 py-2.5 bg-emerald-600 text-white text-sm font-semibold rounded-full hover:bg-emerald-700 transition-all duration-300"
+                >
+                  Get Directions on Google Maps
+                </a>
+              </div>
+            </div>
           </div>
+
+          {/* LocalBusiness Structured Data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "name": "LePro Wellness Center",
+                "url": "https://www.leprowellnesscenter.ca",
+                "telephone": "+16138785060",
+                "email": "admin@leprowellnesscenter.ca",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Suite 104 - 2 Gurdwara Road",
+                  "addressLocality": "Ottawa",
+                  "addressRegion": "ON",
+                  "postalCode": "K2E 1A2",
+                  "addressCountry": "CA"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 45.3352,
+                  "longitude": -75.7272
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                    "opens": "09:00",
+                    "closes": "16:00"
+                  }
+                ],
+                "hasMap": "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
+                "sameAs": [
+                  "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
     </div>

@@ -195,9 +195,11 @@ export default function RootLayout({
                 "latitude": 45.4215,
                 "longitude": -75.6972
               },
-              "openingHours": [
-                "Mo-Fr 08:00-18:00",
-                "Sa 09:00-15:00"
+              "hasMap": "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
+              "sameAs": [
+                "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
+                "https://www.leprowellnesscenter.ca",
+                "https://www.instagram.com/leprowellnesscenter.ca"
               ],
               "priceRange": "$$",
               "paymentAccepted": ["Cash", "Credit Card", "Insurance"],
