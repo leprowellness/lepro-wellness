@@ -117,6 +117,17 @@ const Navbar = () => {
             </Link>
 
             <Link
+              href="/blog"
+              className={`text-base font-medium transition-all duration-300 hover:text-emerald-600 ${
+                pathname.startsWith("/blog")
+                  ? "text-emerald-600 border-b-2 border-emerald-600"
+                  : "text-gray-700"
+              }`}
+            >
+              Blog
+            </Link>
+
+            <Link
               href="/contact"
               className={`px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-medium rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 ${
                 isActive("/contact") ? "shadow-lg scale-105" : ""
@@ -203,6 +214,18 @@ const Navbar = () => {
               }`}
             >
               About Us
+            </Link>
+
+            <Link
+              href="/blog"
+              onClick={() => setIsOpen(false)}
+              className={`px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                pathname.startsWith("/blog")
+                  ? "bg-emerald-50 text-emerald-600"
+                  : "text-gray-700 hover:bg-gray-50"
+              }`}
+            >
+              Blog
             </Link>
 
             <Link

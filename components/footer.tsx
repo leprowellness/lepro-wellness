@@ -75,6 +75,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 text-sm">
+                  Health Blog
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 text-sm">
                   Book Appointment
                 </Link>
