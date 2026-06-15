@@ -28,38 +28,58 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "wellness-center-ottawa",
+    title: "Best Wellness Center in Ottawa 2025: Complete Guide to LePro Wellness",
+    excerpt: "Your complete guide to Ottawa's leading wellness clinic — services, insurance coverage, and why Ottawa residents trust LePro Wellness Center for physiotherapy, massage therapy, and rehabilitation.",
+    date: "2026-06-10",
+    readTime: "6 min read",
+    category: "Wellness Ottawa",
+  },
+  {
+    slug: "back-pain-treatment-ottawa",
+    title: "Back Pain Treatment in Ottawa: Best Physiotherapy Options in 2025",
+    excerpt: "Suffering from back pain in Ottawa? Discover the most effective physiotherapy treatments for lower back pain, sciatica, and herniated discs. Covered by insurance.",
+    date: "2026-06-01",
+    readTime: "6 min read",
+    category: "Back Pain",
+  },
+  {
+    slug: "sports-injury-rehab-ottawa",
+    title: "Sports Injury Rehabilitation Ottawa: Get Back in the Game Faster",
+    excerpt: "Expert athletic therapy and physiotherapy for sports injuries in Ottawa. Knee, shoulder, ankle injuries treated with a proven 4-phase return-to-sport program.",
+    date: "2026-06-05",
+    readTime: "5 min read",
+    category: "Sports Injury",
+  },
+  {
     slug: "physiotherapy-ottawa-guide",
     title: "Physiotherapy in Ottawa: Complete Guide to Finding the Right Clinic",
-    excerpt:
-      "Everything you need to know about physiotherapy in Ottawa — from what to expect at your first visit to how IFHP and WSIB coverage works in Ontario.",
-    date: "2025-05-01",
+    excerpt: "Everything you need to know about physiotherapy in Ottawa — from what to expect at your first visit to how IFHP and WSIB coverage works in Ontario.",
+    date: "2026-05-01",
     readTime: "6 min read",
     category: "Physiotherapy",
   },
   {
     slug: "mva-rehabilitation-ontario",
     title: "MVA Rehabilitation in Ontario: Your Rights & Recovery Guide",
-    excerpt:
-      "Were you injured in a car accident in Ottawa? Here's a complete guide to motor vehicle accident rehabilitation, insurance coverage, and your rights under Ontario law.",
-    date: "2025-04-20",
+    excerpt: "Were you injured in a car accident in Ottawa? Here's a complete guide to motor vehicle accident rehabilitation, insurance coverage, and your rights under Ontario law.",
+    date: "2026-04-20",
     readTime: "7 min read",
     category: "MVA Recovery",
   },
   {
     slug: "massage-therapy-benefits-ottawa",
     title: "7 Science-Backed Benefits of Registered Massage Therapy",
-    excerpt:
-      "Registered massage therapy is more than relaxation. Discover the evidence-based health benefits of regular RMT sessions, from chronic pain relief to improved sleep.",
-    date: "2025-04-10",
+    excerpt: "Registered massage therapy is more than relaxation. Discover the evidence-based health benefits of regular RMT sessions, from chronic pain relief to improved sleep.",
+    date: "2026-04-10",
     readTime: "5 min read",
     category: "Massage Therapy",
   },
   {
     slug: "ifhp-coverage-physiotherapy-ottawa",
     title: "IFHP Coverage for Physiotherapy in Ottawa: What You Need to Know",
-    excerpt:
-      "Are you covered under the Interim Federal Health Program? Learn how to access physiotherapy, massage therapy, and rehabilitation services in Ottawa using your IFHP benefits.",
-    date: "2025-03-28",
+    excerpt: "Are you covered under the Interim Federal Health Program? Learn how to access physiotherapy, massage therapy, and rehabilitation services in Ottawa using your IFHP benefits.",
+    date: "2026-03-28",
     readTime: "5 min read",
     category: "Insurance & Coverage",
   },

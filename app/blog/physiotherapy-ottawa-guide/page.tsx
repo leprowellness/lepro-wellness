@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Physiotherapy in Ottawa: Complete Guide 2025 | LePro Wellness",
+  title: "Physiotherapy in Ottawa: Complete Guide 2026 | LePro Wellness",
   description:
     "Everything you need to know about physiotherapy in Ottawa — what to expect, how IFHP and WSIB coverage works, costs, and how to find the right physiotherapist in Ottawa, Ontario.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/blog/physiotherapy-ottawa-guide" },
   openGraph: {
-    title: "Physiotherapy in Ottawa: Complete Guide 2025",
+    title: "Physiotherapy in Ottawa: Complete Guide 2026",
     description: "Everything you need to know about physiotherapy in Ottawa, Ontario.",
     url: "/blog/physiotherapy-ottawa-guide",
     type: "article",
@@ -34,7 +34,7 @@ export default function PhysiotherapyOttawaGuide() {
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">Physiotherapy</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Physiotherapy in Ottawa: Complete Guide 2025
+            Physiotherapy in Ottawa: Complete Guide 2026
           </h1>
           <p className="text-xl text-emerald-50">
             Everything Ottawa residents need to know — costs, coverage, and what to expect from physiotherapy treatment.
@@ -60,7 +60,7 @@ export default function PhysiotherapyOttawaGuide() {
                   "name": "LePro Wellness Center",
                   "url": "https://www.leprowellnesscenter.ca"
                 },
-                "datePublished": "2025-05-01",
+                "datePublished": "2026-05-01",
                 "description": "Everything you need to know about physiotherapy in Ottawa — costs, IFHP & WSIB coverage, and finding the right clinic.",
               })
             }}

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "MVA Rehabilitation in Ottawa & Ontario: Your Recovery Guide 2025 | LePro Wellness",
+  title: "MVA Rehabilitation in Ottawa & Ontario: Your Recovery Guide 2026 | LePro Wellness",
   description:
     "Were you injured in a car accident in Ottawa? Learn your rights, how MVA rehabilitation works in Ontario, what insurance covers, and how to start your recovery at LePro Wellness.",
   keywords: [
@@ -33,7 +33,7 @@ export default function MvaRehabilitationOntario() {
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">MVA Recovery</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            MVA Rehabilitation in Ottawa & Ontario: Your Rights & Recovery Guide 2025
+            MVA Rehabilitation in Ottawa & Ontario: Your Rights & Recovery Guide 2026
           </h1>
           <p className="text-xl text-cyan-50">
             A complete guide to motor vehicle accident rehabilitation in Ottawa — from insurance coverage to recovery timelines.
@@ -52,7 +52,7 @@ export default function MvaRehabilitationOntario() {
                 "headline": "MVA Rehabilitation in Ottawa & Ontario: Your Rights & Recovery Guide 2025",
                 "author": { "@type": "Organization", "name": "LePro Wellness Center" },
                 "publisher": { "@type": "Organization", "name": "LePro Wellness Center", "url": "https://www.leprowellnesscenter.ca" },
-                "datePublished": "2025-04-20",
+                "datePublished": "2026-04-20",
               })
             }}
           />

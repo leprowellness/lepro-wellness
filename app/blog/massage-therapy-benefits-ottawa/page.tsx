@@ -88,7 +88,7 @@ export default function MassageTherapyBenefits() {
                 "headline": "7 Science-Backed Benefits of Registered Massage Therapy",
                 "author": { "@type": "Organization", "name": "LePro Wellness Center" },
                 "publisher": { "@type": "Organization", "name": "LePro Wellness Center", "url": "https://www.leprowellnesscenter.ca" },
-                "datePublished": "2025-04-10",
+                "datePublished": "2026-04-10",
               })
             }}
           />

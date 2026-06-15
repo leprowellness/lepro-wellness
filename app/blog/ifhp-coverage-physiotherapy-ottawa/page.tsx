@@ -63,7 +63,7 @@ export default function IfhpCoverageGuide() {
                 "headline": "IFHP Coverage for Physiotherapy in Ottawa: Complete Guide",
                 "author": { "@type": "Organization", "name": "LePro Wellness Center" },
                 "publisher": { "@type": "Organization", "name": "LePro Wellness Center", "url": "https://www.leprowellnesscenter.ca" },
-                "datePublished": "2025-03-28",
+                "datePublished": "2026-03-28",
               })
             }}
           />
