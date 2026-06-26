@@ -4,7 +4,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About LePro Wellness Center Ottawa | Physiotherapy & Wellness Clinic",
   description:
-    "Learn about LePro Wellness Center in Ottawa, Ontario. Licensed physiotherapists, registered massage therapists, and athletic therapists serving Ottawa since day one. IFHP & WSIB accepted.",
+    "Meet our licensed team at LePro Wellness Center in Ottawa, Ontario. Providing physiotherapy, pelvic floor rehabilitation, massage therapy, and athletic therapy since 2022. IFHP & WSIB accepted.",
   keywords: [
     "about LePro Wellness Center Ottawa",
     "Ottawa physiotherapy clinic about",
@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     "WSIB clinic Ottawa",
     "Ottawa rehabilitation center",
     "licensed physiotherapist Ottawa",
+    "pelvic floor physiotherapist Ottawa",
+    "geriatric physiotherapy Ottawa",
     "Ottawa health clinic team",
     "2 Gurdwara Road Ottawa",
   ],
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About LePro Wellness Center | Ottawa's Trusted Wellness Clinic",
     description:
-      "Meet the licensed healthcare professionals at LePro Wellness Center in Ottawa. Expert physiotherapy, massage therapy, and athletic therapy services.",
+      "Meet the licensed healthcare professionals at LePro Wellness Center in Ottawa. Expert physiotherapy, massage therapy, and pelvic health services.",
     url: "/about",
     siteName: "LePro Wellness Center",
     type: "website",
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About LePro Wellness Center Ottawa",
-    description: "Licensed physiotherapists, RMTs, and athletic therapists serving Ottawa. IFHP & WSIB accepted.",
+    description: "Licensed physiotherapists, RMTs, and pelvic floor therapists serving Ottawa. IFHP & WSIB accepted.",
   },
 };
 
@@ -56,9 +58,52 @@ export default function About() {
     },
   ]
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.leprowellnesscenter.ca"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "https://www.leprowellnesscenter.ca/about"
+      }
+    ]
+  }
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "LePro Wellness Center Ottawa",
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "LePro Wellness Healthcare Team",
+        "jobTitle": "Registered Physiotherapists & RMTs",
+        "worksFor": {
+          "@type": "MedicalOrganization",
+          "name": "LePro Wellness Center"
+        }
+      }
+    ]
+  }
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +112,7 @@ export default function About() {
               About LePro Wellness Center
             </h1>
             <p className="text-xl text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100">
-              Comprehensive wellness, rehabilitation, and mental health services in Ottawa, Ontario.
+              Comprehensive wellness, physiotherapy, and rehabilitation services in Ottawa, Ontario.
             </p>
           </div>
         </div>

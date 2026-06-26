@@ -107,6 +107,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/blog/pelvic-floor-physiotherapy-ottawa" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 text-sm">
+                  Pelvic Floor Physiotherapy
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/athletic-therapy" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 text-sm">
                   Athletic Therapy Ottawa
                 </Link>
@@ -166,7 +171,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <p className="text-gray-500 text-xs text-center mb-2 uppercase tracking-wider">Areas We Serve in Ottawa</p>
           <p className="text-gray-500 text-xs text-center leading-relaxed">
-            Nepean · Barrhaven · Kanata · Gloucester · Orléans · Centretown · Westboro · Hintonburg · Carlington · Merivale · South Keys · Hunt Club · Riverside South
+            Nepean · Barrhaven · Kanata · Gloucester · Orléans · Centretown · Westboro · Hintonburg · Carlington · Merivale · South Keys · Hunt Club · Riverside South · Vanier · Stittsville · Manotick · Rockcliffe Park
           </p>
         </div>
 

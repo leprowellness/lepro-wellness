@@ -1,18 +1,25 @@
 import Link from "next/link"
-import { Activity, CheckCircle, ArrowRight, Clock, Users, Award } from "lucide-react"
+import { Activity, CheckCircle, ArrowRight, Clock, Users, Award, Star } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Ottawa | #1 Rated Physio Clinic | LePro Wellness",
+  title: "Physiotherapy Ottawa | Pelvic Floor, Back Pain & Sports Injury | LePro Wellness",
   description:
-    "Top-rated physiotherapy clinic in Ottawa, Ontario. Expert treatment for back pain, sports injuries, MVA rehab, and chronic pain. IFHP & WSIB accepted. Book your assessment today.",
+    "Ottawa's top-rated physiotherapy clinic. Expert treatment for pelvic floor dysfunction, back pain, sports injuries, seniors rehab, and MVA recovery. Same-day appointments. IFHP & WSIB accepted. Book today.",
   keywords: [
     "physiotherapy Ottawa",
     "physiotherapist Ottawa",
     "physio Ottawa",
     "physiotherapy clinic Ottawa",
+    "pelvic floor physiotherapy Ottawa",
+    "pelvic floor therapy Ottawa",
     "back pain physiotherapy Ottawa",
     "sports injury physiotherapy Ottawa",
+    "physiotherapy for seniors Ottawa",
+    "osteoarthritis physiotherapy Ottawa",
+    "sciatica treatment Ottawa",
+    "knee pain physiotherapy Ottawa",
+    "manual therapy Ottawa",
     "MVA physiotherapy Ottawa",
     "WSIB physiotherapy Ottawa",
     "IFHP physiotherapy Ottawa",
@@ -20,6 +27,8 @@ export const metadata: Metadata = {
     "IMS therapy Ottawa",
     "chronic pain physiotherapy Ottawa",
     "neck pain treatment Ottawa",
+    "post-surgical rehabilitation Ottawa",
+    "same-day physiotherapy Ottawa",
     "physiotherapy near me Ottawa",
     "best physiotherapist Ottawa",
     "Ottawa physio clinic",
@@ -28,17 +37,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/services/physiotherapy" },
   openGraph: {
-    title: "Physiotherapy Ottawa | Expert Injury Recovery | LePro Wellness",
+    title: "Physiotherapy Ottawa | Pelvic Floor, Sports Injury & Back Pain | LePro Wellness",
     description:
-      "Top-rated physiotherapy in Ottawa for back pain, sports injuries, MVA rehab, and chronic pain. IFHP & WSIB accepted.",
+      "Top-rated physiotherapy in Ottawa for pelvic floor dysfunction, back pain, sports injuries, seniors rehab, and MVA recovery. Same-day appointments. IFHP & WSIB accepted.",
     url: "/services/physiotherapy",
     siteName: "LePro Wellness Center",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Physiotherapy Ottawa | LePro Wellness Center",
-    description: "Expert physiotherapy in Ottawa for injury recovery, back pain, and MVA rehab. IFHP & WSIB accepted.",
+    title: "Physiotherapy Ottawa | LePro Wellness | Pelvic Floor & Sports Injury",
+    description: "Expert physiotherapy in Ottawa for pelvic floor, back pain, sports injuries & MVA rehab. Same-day appointments. IFHP & WSIB accepted.",
   },
 }
 export default function Physiotherapy() {
@@ -49,15 +58,20 @@ export default function Physiotherapy() {
     "Prevention of future injuries",
     "Enhanced athletic performance",
     "Better posture and functional balance",
+    "Pelvic floor dysfunction relief",
+    "Improved quality of life for seniors",
   ]
 
   const conditions = [
     "Lower back and neck pain",
+    "Pelvic floor dysfunction (postpartum, incontinence, pelvic pain)",
     "Sports injuries and rehabilitation",
     "Motor vehicle accident (MVA) rehabilitation",
     "Workplace injury recovery (WSIB)",
     "Post-surgical rehabilitation",
     "Arthritis and joint pain management",
+    "Osteoarthritis (seniors rehabilitation)",
+    "Sciatica and nerve pain",
     "Neurological condition support",
     "Chronic pain management",
     "Tension headaches and migraines",
@@ -110,6 +124,14 @@ export default function Physiotherapy() {
 
   const faq = [
     {
+      q: "Do you offer pelvic floor physiotherapy in Ottawa?",
+      a: "Yes! We offer specialized pelvic floor physiotherapy in Ottawa for postpartum recovery, pelvic pain, incontinence, and pelvic floor dysfunction. Our therapists provide private, evidence-based assessments and treatment plans. Pelvic floor physiotherapy is one of the fastest-growing and most impactful services we offer.",
+    },
+    {
+      q: "Do you offer same-day physiotherapy appointments in Ottawa?",
+      a: "Yes, we offer same-day physiotherapy appointments subject to availability. Call us at (613) 878-5060 or book online and we will do our best to accommodate you as quickly as possible.",
+    },
+    {
       q: "Do I need a doctor's referral for physiotherapy in Ottawa?",
       a: "No, in Ontario, you have direct access to physiotherapy. However, some private insurance plans may require a referral for reimbursement, so it's always best to check with your provider.",
     },
@@ -122,6 +144,10 @@ export default function Physiotherapy() {
       a: "Yes, we are a registered provider for IFHP (Interim Federal Health Program) and WSIB (Workplace Safety and Insurance Board). We handle the necessary paperwork to make your recovery as stress-free as possible.",
     },
     {
+      q: "Do you provide physiotherapy for seniors in Ottawa?",
+      a: "Absolutely. We specialize in geriatric physiotherapy including osteoarthritis management, fall prevention, post-surgical rehabilitation, and mobility improvement programs tailored for older adults.",
+    },
+    {
       q: "What should I wear to my first physiotherapy appointment?",
       a: "Wear comfortable, loose-fitting clothing that allows us to easily access the area being treated. For example, shorts for knee injuries or a tank top for shoulder issues are ideal.",
     },
@@ -129,6 +155,21 @@ export default function Physiotherapy() {
 
   return (
     <div className="min-h-screen">
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.leprowellnesscenter.ca" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.leprowellnesscenter.ca/services" },
+              { "@type": "ListItem", "position": 3, "name": "Physiotherapy Ottawa", "item": "https://www.leprowellnesscenter.ca/services/physiotherapy" },
+            ],
+          }),
+        }}
+      />
       {/* FAQ Structured Data */}
       <script
         type="application/ld+json"
@@ -144,6 +185,34 @@ export default function Physiotherapy() {
                 "text": item.a,
               },
             })),
+          }),
+        }}
+      />
+      {/* Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Physiotherapy Ottawa",
+            "description": "Expert physiotherapy in Ottawa for pelvic floor dysfunction, back pain, sports injuries, MVA rehab, seniors rehabilitation, and chronic pain. Same-day appointments available.",
+            "provider": {
+              "@type": "MedicalClinic",
+              "name": "LePro Wellness Center",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Suite 104 - 2 Gurdwara Road",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K2E 1A2",
+                "addressCountry": "CA",
+              },
+              "telephone": "+16138785060",
+            },
+            "areaServed": {"@type": "City", "name": "Ottawa"},
+            "serviceType": "Physiotherapy",
+            "url": "https://www.leprowellnesscenter.ca/services/physiotherapy",
           }),
         }}
       />
@@ -164,22 +233,27 @@ export default function Physiotherapy() {
 
         {/* Content */}
         <div className="relative max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 backdrop-blur-sm text-emerald-100 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <Clock className="w-4 h-4" />
+            <span>Same-Day Appointments Available · Ottawa, ON</span>
+          </div>
           <div className="flex justify-center items-center space-x-3 mb-6">
             <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
               <Activity className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold">Physiotherapy in Ottawa for Injury Recovery</h1>
+            <h1 className="text-4xl md:text-5xl font-bold">Physiotherapy Ottawa | Pelvic Floor &amp; Injury Recovery</h1>
           </div>
 
           <p className="text-xl text-emerald-50 mb-8 leading-relaxed">
-            Restore movement, eliminate pain, and reclaim your quality of life. Our expert Ottawa physiotherapists provide personalized, evidence-based care for back pain, sports injuries, and MVA recovery.
+            Ottawa&apos;s trusted physiotherapy clinic specializing in pelvic floor rehabilitation, back pain, sports injuries, seniors mobility, and MVA recovery. IFHP &amp; WSIB accepted. Book your same-day assessment today.
           </p>
 
           <Link
             href="/contact"
+            id="physio-cta-hero"
             className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
-            <span>Start Your Recovery</span>
+            <span>Book Your Assessment</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

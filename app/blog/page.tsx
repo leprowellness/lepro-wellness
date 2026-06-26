@@ -3,12 +3,14 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Health & Wellness Blog Ottawa | Physiotherapy Tips | LePro Wellness",
+  title: "Health & Wellness Blog Ottawa | Physiotherapy Tips & Guides | LePro Wellness",
   description:
-    "Expert physiotherapy and wellness articles from LePro Wellness Center Ottawa. Learn about MVA recovery, IFHP coverage, massage therapy benefits, and injury prevention tips.",
+    "Expert pelvic floor, sports injury, and seniors physiotherapy articles from LePro Wellness Center Ottawa. Find 2026 evidence-based guides on recovery, pain relief, and direct billing.",
   keywords: [
     "physiotherapy blog Ottawa",
-    "wellness tips Ottawa",
+    "pelvic floor physiotherapy Ottawa",
+    "physiotherapy for seniors Ottawa",
+    "Ottawa pelvic health clinic",
     "injury recovery Ottawa",
     "MVA rehab guide Ontario",
     "IFHP coverage physiotherapy",
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Health & Wellness Blog | LePro Wellness Center Ottawa",
-    description: "Expert physiotherapy and wellness articles from Ottawa's trusted wellness clinic.",
+    description: "Expert pelvic floor, sports injury, and seniors physiotherapy articles from Ottawa's trusted clinic.",
     url: "/blog",
     siteName: "LePro Wellness Center",
     type: "website",
@@ -28,8 +30,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "pelvic-floor-physiotherapy-ottawa",
+    title: "Pelvic Floor Physiotherapy Ottawa: Complete 2026 Guide",
+    excerpt: "Learn how pelvic floor physiotherapy treats incontinence, pelvic pain, prenatal/postnatal recovery, and core weakness in Ottawa. Step-by-step treatment info and coverage guide.",
+    date: "2026-06-26",
+    readTime: "7 min read",
+    category: "Pelvic Health",
+  },
+  {
+    slug: "physiotherapy-for-seniors-ottawa",
+    title: "Physiotherapy for Seniors in Ottawa: 2026 Mobility & Recovery Guide",
+    excerpt: "Help your loved ones restore mobility, prevent falls, and manage osteoarthritis. A comprehensive guide to tailored senior physiotherapy services in Ottawa.",
+    date: "2026-06-25",
+    readTime: "6 min read",
+    category: "Seniors Health",
+  },
+  {
     slug: "wellness-center-ottawa",
-    title: "Best Wellness Center in Ottawa 2025: Complete Guide to LePro Wellness",
+    title: "Best Wellness Center in Ottawa 2026: Complete Guide to LePro Wellness",
     excerpt: "Your complete guide to Ottawa's leading wellness clinic — services, insurance coverage, and why Ottawa residents trust LePro Wellness Center for physiotherapy, massage therapy, and rehabilitation.",
     date: "2026-06-10",
     readTime: "6 min read",
@@ -37,7 +55,7 @@ const posts = [
   },
   {
     slug: "back-pain-treatment-ottawa",
-    title: "Back Pain Treatment in Ottawa: Best Physiotherapy Options in 2025",
+    title: "Back Pain Treatment in Ottawa: Best Physiotherapy Options in 2026",
     excerpt: "Suffering from back pain in Ottawa? Discover the most effective physiotherapy treatments for lower back pain, sciatica, and herniated discs. Covered by insurance.",
     date: "2026-06-01",
     readTime: "6 min read",
@@ -86,14 +104,31 @@ const posts = [
 ]
 
 export default function BlogPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "LePro Wellness Health & Wellness Blog",
+    "description": "Expert physiotherapy, pelvic floor health, and wellness articles from LePro Wellness Center Ottawa.",
+    "itemListElement": posts.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://www.leprowellnesscenter.ca/blog/${post.slug}`,
+      "name": post.title,
+    })),
+  }
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Health & Wellness Blog</h1>
           <p className="text-xl text-emerald-50 max-w-3xl mx-auto">
-            Expert advice on physiotherapy, massage therapy, injury recovery, and wellness from LePro Wellness Center Ottawa.
+            Expert advice on physiotherapy, pelvic floor health, seniors mobility, and wellness from LePro Wellness Center Ottawa.
           </p>
         </div>
       </section>

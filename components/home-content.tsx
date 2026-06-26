@@ -8,6 +8,10 @@ import {
     Award,
     ArrowRight,
     CheckCircle,
+    Star,
+    Phone,
+    Clock,
+    Shield,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -20,6 +24,10 @@ interface HomeContentProps {
         color: string;
     }[];
     features: string[];
+    stats: {
+        value: string;
+        label: string;
+    }[];
 }
 
 const iconMap: Record<string, any> = {
@@ -27,9 +35,13 @@ const iconMap: Record<string, any> = {
     Award,
     Heart,
     Users,
+    Star,
+    Phone,
+    Clock,
+    Shield,
 };
 
-export default function HomeContent({ services, features }: HomeContentProps) {
+export default function HomeContent({ services, features, stats }: HomeContentProps) {
     // Carousel images
     const carouselImages = ["/1.jpeg", "/2.jpeg", "/3.jpeg", "/4.jpeg"];
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,26 +73,33 @@ export default function HomeContent({ services, features }: HomeContentProps) {
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                         <div className="text-center">
+                            <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 backdrop-blur-sm text-emerald-100 text-sm font-medium px-4 py-2 rounded-full mb-6 animate-fade-in">
+                                <Clock className="w-4 h-4" />
+                                <span>Same-Day Appointments Available · Ottawa, ON</span>
+                            </div>
                             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-down text-balance text-white">
-                                Expert Physiotherapy Ottawa & Holistic Wellness Care
+                                Ottawa&apos;s #1 Physiotherapy Clinic
                             </h1>
-                            <p className="text-xl md:text-2xl mb-8 text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100 text-pretty">
-                                Welcome to LePro Wellness Center in Ottawa. Our dedicated clinic provides professional physiotherapy, registered massage therapy, and specialized athletic therapy to help you recover and thrive. We proudly accept IFHP coverage for eligible patients.
+                            <p className="speakable-summary text-xl md:text-2xl mb-8 text-emerald-50 max-w-3xl mx-auto animate-slide-up delay-100 text-pretty">
+                                Expert physiotherapy, pelvic floor therapy, registered massage therapy, and MVA rehabilitation in Ottawa. IFHP &amp; WSIB accepted. Same-day appointments at Suite 104 – 2 Gurdwara Road.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in delay-200">
                                 <Link
                                     href="/contact"
+                                    id="hero-book-appointment"
                                     className="px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2"
                                 >
                                     <span>Book Appointment</span>
                                     <ArrowRight className="w-5 h-5" />
                                 </Link>
-                                <Link
-                                    href="/about"
-                                    className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-emerald-600 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                                <a
+                                    href="tel:+16138785060"
+                                    id="hero-call-now"
+                                    className="px-8 py-4 bg-emerald-500/30 border-2 border-emerald-300 text-white font-semibold rounded-full hover:bg-emerald-500/50 hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2"
                                 >
-                                    Learn More
-                                </Link>
+                                    <Phone className="w-5 h-5" />
+                                    <span>Call: (613) 878-5060</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -90,15 +109,75 @@ export default function HomeContent({ services, features }: HomeContentProps) {
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-300"></div>
             </section>
 
+            {/* Stats Bar */}
+            <section className="bg-emerald-700 py-6">
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                        {stats.map((stat, i) => (
+                            <div key={i} className="flex flex-col items-center">
+                                <span className="text-3xl font-bold text-emerald-100">{stat.value}</span>
+                                <span className="text-sm text-emerald-200 mt-1">{stat.label}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Philosophy Section */}
             <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-slide-up">
-                        Our Holistic Approach to Ottawa Healthcare
+                        Ottawa&apos;s Trusted Physiotherapy &amp; Wellness Clinic
                     </h2>
                     <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-up delay-100">
-                        Looking for a top-rated physiotherapy clinic in Ottawa? At LePro Wellness Center, our philosophy centers on providing the best Canadian healthcare standards through a holistic approach. Whether you are seeking sports injury rehab or chronic pain relief, our Ottawa wellness center creates personalized treatment plans to restore your mobility and function. We are a proud provider for IFHP coverage, supporting the health and recovery of our local community.
+                        At <strong>LePro Wellness Center</strong>, we are Ottawa&apos;s go-to physiotherapy clinic for back pain, sports injuries, pelvic floor rehabilitation, and MVA recovery. Our evidence-based approach combines expert manual therapy, personalized exercise programs, and compassionate care to help you recover faster and stay pain-free. We proudly accept <strong>IFHP coverage</strong> and <strong>WSIB</strong>, and offer same-day appointments at our clinic at Suite 104 – 2 Gurdwara Road, Ottawa.
                     </p>
+                </div>
+            </section>
+
+            {/* Trending 2026 Services Callout */}
+            <section className="py-14 bg-white border-y border-gray-100">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-10">
+                        <span className="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-full mb-3">Trending in Ottawa 2026</span>
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">High-Demand Physiotherapy Services</h2>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {[
+                            {
+                                icon: "⚕️",
+                                title: "Pelvic Floor Physiotherapy",
+                                desc: "Ottawa's fastest-growing physio specialty. For postpartum recovery, pelvic pain, incontinence & pelvic floor dysfunction.",
+                                href: "/services/physiotherapy",
+                            },
+                            {
+                                icon: "🏃",
+                                title: "Sports Injury Rehabilitation",
+                                desc: "Get back in the game faster. Knee, shoulder, ankle, and back injuries treated with evidence-based athletic therapy.",
+                                href: "/services/athletic-therapy",
+                            },
+                            {
+                                icon: "🧓",
+                                title: "Physiotherapy for Seniors",
+                                desc: "Specialized rehab for osteoarthritis, fall prevention, post-surgical recovery, and maintaining mobility as you age.",
+                                href: "/services/physiotherapy",
+                            },
+                        ].map((item, i) => (
+                            <Link
+                                key={i}
+                                href={item.href}
+                                id={`trending-service-${i}`}
+                                className="group flex flex-col items-start p-6 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <span className="text-3xl mb-3">{item.icon}</span>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">{item.title}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed mb-3">{item.desc}</p>
+                                <span className="inline-flex items-center gap-1 text-emerald-600 text-sm font-medium">
+                                    Learn More <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -108,10 +187,10 @@ export default function HomeContent({ services, features }: HomeContentProps) {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="animate-slide-left">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                Why Choose Our Ottawa Wellness Clinic?
+                                Why Ottawa Chooses LePro Wellness Center
                             </h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                As one of Ottawa&apos;s leading wellness centers, we offer expert-led care that focuses on lasting results. Our multi-disciplinary team combines advanced manual therapy with personalized recovery plans for athletes, seniors, and MVA patients. From our state-of-the-art facility in Ottawa, we provide the compassionate, evidence-based physiotherapy and massage therapy you need to return to your daily activities pain-free.
+                                As one of Ottawa&apos;s leading physiotherapy clinics, we offer expert-led care that focuses on lasting results. Our multi-disciplinary team combines advanced manual therapy, pelvic floor physiotherapy, and personalized recovery plans for athletes, seniors, and MVA patients. From our state-of-the-art facility at 2 Gurdwara Road, Ottawa, we provide the compassionate, evidence-based physiotherapy you need to return to your daily activities pain-free.
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {features.map((feature, index) => (
@@ -132,7 +211,7 @@ export default function HomeContent({ services, features }: HomeContentProps) {
                                 <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
                                     <img
                                         src="/4.jpeg"
-                                        alt="Professional physiotherapy and rehabilitation treatments at LePro Wellness Center Ottawa"
+                                        alt="Professional physiotherapy and pelvic floor rehabilitation treatments at LePro Wellness Center Ottawa"
                                         className="w-full h-full object-cover rounded-2xl"
                                     />
                                 </div>
@@ -144,24 +223,25 @@ export default function HomeContent({ services, features }: HomeContentProps) {
             </section>
 
             {/* Services Section */}
-            <section className="py-20 bg-white">
+            <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 animate-slide-up">
-                            Our Specialized Wellness & Physiotherapy Services in Ottawa
+                            Our Physiotherapy &amp; Wellness Services in Ottawa
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-up delay-100 leading-relaxed">
-                            Experience the best in Canadian healthcare at LePro Wellness Center. We provide expert physiotherapy, registered massage therapy, and athletic therapy. Our Ottawa clinic specializes in injury recovery and MVA rehabilitation, with IFHP coverage accepted.
+                            From pelvic floor physiotherapy to sports injury rehab and MVA recovery, LePro Wellness Center Ottawa provides expert, evidence-based care. IFHP &amp; WSIB accepted. Same-day appointments available.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => {
                             const Icon = iconMap[service.icon] || Activity;
                             return (
                                 <Link
                                     key={service.title}
                                     href={service.link}
+                                    id={`service-card-${index}`}
                                     className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 hover:-translate-y-2 animate-scale-in"
                                     style={{ animationDelay: `${index * 100}ms` }}
                                 >
@@ -195,7 +275,7 @@ export default function HomeContent({ services, features }: HomeContentProps) {
                             <img
                                 key={index}
                                 src={img}
-                                alt={`LePro Wellness Center Ottawa - ${["Physiotherapy", "Massage Therapy", "Athletic Therapy", "Wellness Clinic"][index] || "Healthcare Services"}`}
+                                alt={`LePro Wellness Center Ottawa - ${["Physiotherapy", "Pelvic Floor Therapy", "Athletic Therapy", "Wellness Clinic"][index] || "Healthcare Services"}`}
                                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"
                                     }`}
                             />
@@ -207,21 +287,37 @@ export default function HomeContent({ services, features }: HomeContentProps) {
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
+                        <Clock className="w-4 h-4" />
+                        <span>Same-Day Appointments Available</span>
+                    </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">
-                        Ready to Start Your Wellness Journey?
+                        Ready to Start Your Recovery?
                     </h2>
                     <p className="text-xl mb-8 text-emerald-50 animate-slide-up delay-100">
-                        Schedule your Ottawa physiotherapy or massage therapy appointment today. Join hundreds of satisfied patients who have found lasting pain relief at our expert-led wellness clinic.
+                        Book your Ottawa physiotherapy assessment today. Expert physio, pelvic floor therapy &amp; massage therapy. Hundreds of Ottawa patients have found lasting pain relief at our clinic.
                     </p>
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-scale-in delay-200"
-                    >
-                        <span>Contact Us Now</span>
-                        <ArrowRight className="w-5 h-5" />
-                    </Link>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link
+                            href="/contact"
+                            id="cta-book-appointment"
+                            className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-emerald-600 font-semibold rounded-full hover:bg-emerald-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-scale-in delay-200"
+                        >
+                            <span>Book Appointment Online</span>
+                            <ArrowRight className="w-5 h-5" />
+                        </Link>
+                        <a
+                            href="tel:+16138785060"
+                            id="cta-call-now"
+                            className="inline-flex items-center space-x-2 px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-emerald-600 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                        >
+                            <Phone className="w-5 h-5" />
+                            <span>Call (613) 878-5060</span>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
     );
 }
+

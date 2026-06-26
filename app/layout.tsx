@@ -10,11 +10,11 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: {
-    default: "LePro Wellness Center Ottawa | Physiotherapy, Massage & Athletic Therapy",
+    default: "Physiotherapy Ottawa | LePro Wellness Center | Pelvic Floor, Sports Injury & MVA Rehab",
     template: "%s | LePro Wellness Center Ottawa",
   },
   description:
-    "Ottawa's trusted wellness center at Suite 104 - 2 Gurdwara Road. Expert physiotherapy, registered massage therapy, athletic therapy & MVA rehabilitation. IFHP & WSIB accepted. Book today!",
+    "Ottawa's #1 physiotherapy clinic at Suite 104 - 2 Gurdwara Road. Expert physiotherapy, pelvic floor therapy, registered massage therapy, athletic therapy & MVA rehabilitation. Same-day appointments. IFHP & WSIB accepted. Book today!",
   icons: {
     icon: [
       { url: "/logoo.png", type: "image/png", sizes: "32x32" },
@@ -25,35 +25,62 @@ export const metadata: Metadata = {
     apple: { url: "/logoo.png", type: "image/png", sizes: "180x180" },
   },
   keywords: [
-    "wellness center Ottawa",
-    "wellness centre Ottawa",
+    // Core physiotherapy
     "physiotherapy Ottawa",
     "physiotherapist Ottawa",
+    "physio Ottawa",
+    "physiotherapy clinic Ottawa",
+    "best physiotherapy clinic Ottawa",
+    "physiotherapy near me Ottawa",
+    "physiotherapy Ottawa Ontario",
+    "same-day physiotherapy Ottawa",
+    "Ottawa physical therapy",
+    "Ottawa sports medicine",
+    // 2026 Trending
+    "pelvic floor physiotherapy Ottawa",
+    "pelvic floor therapy Ottawa",
+    "physiotherapy for seniors Ottawa",
+    "seniors rehabilitation Ottawa",
+    "hybrid physiotherapy Ottawa",
+    "manual therapy Ottawa",
+    "sciatica treatment Ottawa",
+    "knee pain physiotherapy Ottawa",
+    "osteoarthritis physiotherapy Ottawa",
+    "post-surgical rehabilitation Ottawa",
+    // Conditions
+    "back pain treatment Ottawa",
+    "neck pain physiotherapy Ottawa",
+    "sports injury rehab Ottawa",
+    "injury rehabilitation Ottawa",
+    "chronic pain clinic Ottawa",
+    "dry needling Ottawa",
+    "IMS therapy Ottawa",
+    // Insurance
+    "IFHP physiotherapy Ottawa",
+    "WSIB physiotherapy Ottawa",
+    "insurance direct billing physiotherapy Ottawa",
+    "motor vehicle accident therapy Ottawa",
+    "MVA rehabilitation Ottawa",
+    "workplace injury therapy Ottawa",
+    // Other services
+    "wellness center Ottawa",
+    "wellness centre Ottawa",
     "massage therapy Ottawa",
     "registered massage therapist Ottawa",
     "RMT Ottawa",
     "athletic therapy Ottawa",
-    "MVA rehabilitation Ottawa",
-    "motor vehicle accident therapy Ottawa",
-    "IFHP physiotherapy Ottawa",
-    "WSIB physiotherapy Ottawa",
-    "sports injury rehab Ottawa",
-    "back pain treatment Ottawa",
-    "neck pain physiotherapy Ottawa",
-    "injury rehabilitation Ottawa",
-    "chronic pain clinic Ottawa",
-    "workplace injury therapy Ottawa",
-    "physiotherapy near me Ottawa",
-    "best physiotherapy clinic Ottawa",
     "Ottawa health clinic",
     "Ottawa rehabilitation center",
+    // Neighbourhoods
     "Nepean physiotherapy",
     "Barrhaven physiotherapy",
     "Kanata physiotherapy",
     "Gloucester physiotherapy",
+    "Orléans physiotherapy",
+    "Westboro physiotherapy",
     "South Ottawa physiotherapy",
-    "Ottawa sports medicine",
-    "Ottawa physical therapy",
+    "Centretown physiotherapy",
+    // Location
     "2 Gurdwara Road Ottawa",
     "K2E 1A2 physiotherapy",
   ],
@@ -65,9 +92,9 @@ export const metadata: Metadata = {
   category: "health",
   alternates: { canonical: "https://www.leprowellnesscenter.ca" },
   openGraph: {
-    title: "LePro Wellness Center Ottawa | Physiotherapy, Massage & Athletic Therapy",
+    title: "Physiotherapy Ottawa | LePro Wellness Center | Pelvic Floor, Sports Injury & MVA Rehab",
     description:
-      "Ottawa's trusted wellness center. Expert physiotherapy, massage therapy, athletic therapy & MVA rehabilitation. IFHP & WSIB accepted.",
+      "Ottawa's trusted physiotherapy clinic. Expert physio, pelvic floor therapy, massage therapy & MVA rehab. Same-day appointments. IFHP & WSIB accepted.",
     url: "https://www.leprowellnesscenter.ca",
     siteName: "LePro Wellness Center",
     locale: "en_CA",
@@ -77,15 +104,15 @@ export const metadata: Metadata = {
         url: "https://www.leprowellnesscenter.ca/logoo.png",
         width: 1200,
         height: 630,
-        alt: "LePro Wellness Center Ottawa — Physiotherapy & Wellness Services",
+        alt: "LePro Wellness Center Ottawa — Physiotherapy, Pelvic Floor & Wellness Services",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LePro Wellness Center Ottawa | Physiotherapy & Wellness",
-    description: "Expert physiotherapy, massage therapy & athletic therapy in Ottawa. IFHP & WSIB accepted.",
+    title: "Physiotherapy Ottawa | LePro Wellness Center | Same-Day Appointments",
+    description: "Expert physiotherapy, pelvic floor therapy & massage therapy in Ottawa. Same-day appointments. IFHP & WSIB accepted.",
     images: ["https://www.leprowellnesscenter.ca/logoo.png"],
     creator: "@leprowellness",
     site: "@leprowellness",
@@ -135,125 +162,196 @@ export default function RootLayout({
         {/* Social */}
         <meta property="og:logo" content="https://www.leprowellnesscenter.ca/logoo.png" />
 
-        {/* LocalBusiness + MedicalBusiness Schema */}
+        {/* MedicalClinic + LocalBusiness Schema — Upgraded for 2026 */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["MedicalBusiness", "LocalBusiness"],
-              "name": "LePro Wellness Center",
-              "alternateName": ["LePro Wellness Center Ottawa", "Lepro Wellness Ottawa"],
-              "description":
-                "Ottawa's trusted wellness center offering physiotherapy, registered massage therapy, athletic therapy, and MVA rehabilitation. IFHP & WSIB accepted.",
-              "url": "https://www.leprowellnesscenter.ca",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.leprowellnesscenter.ca/logoo.png",
-                "width": 400,
-                "height": 400,
-              },
-              "image": "https://www.leprowellnesscenter.ca/logoo.png",
-              "telephone": "+16138785060",
-              "email": "admin@leprowellnesscenter.ca",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Suite 104 - 2 Gurdwara Road",
-                "addressLocality": "Ottawa",
-                "addressRegion": "ON",
-                "postalCode": "K2E 1A2",
-                "addressCountry": "CA",
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 45.3352,
-                "longitude": -75.7272,
-              },
-              "openingHoursSpecification": [
+              "@graph": [
                 {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "09:00",
-                  "closes": "16:00",
+                  "@type": ["MedicalClinic", "MedicalBusiness", "LocalBusiness"],
+                  "@id": "https://www.leprowellnesscenter.ca/#organization",
+                  "name": "LePro Wellness Center",
+                  "alternateName": ["LePro Wellness Center Ottawa", "Lepro Wellness Ottawa", "LePro Physio Ottawa"],
+                  "description":
+                    "Ottawa's trusted physiotherapy clinic offering expert physiotherapy, pelvic floor therapy, registered massage therapy, athletic therapy, and MVA rehabilitation. Same-day appointments available. IFHP & WSIB accepted.",
+                  "url": "https://www.leprowellnesscenter.ca",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.leprowellnesscenter.ca/logoo.png",
+                    "width": 400,
+                    "height": 400,
+                  },
+                  "image": "https://www.leprowellnesscenter.ca/logoo.png",
+                  "telephone": "+16138785060",
+                  "email": "admin@leprowellnesscenter.ca",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Suite 104 - 2 Gurdwara Road",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K2E 1A2",
+                    "addressCountry": "CA",
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 45.3352,
+                    "longitude": -75.7272,
+                  },
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                      "opens": "09:00",
+                      "closes": "16:00",
+                    },
+                  ],
+                  "hasMap": "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
+                  "priceRange": "$$",
+                  "paymentAccepted": ["Cash", "Credit Card", "Insurance", "IFHP", "WSIB"],
+                  "currenciesAccepted": "CAD",
+                  "areaServed": [
+                    {"@type": "City", "name": "Ottawa"},
+                    {"@type": "AdministrativeArea", "name": "Nepean"},
+                    {"@type": "AdministrativeArea", "name": "Barrhaven"},
+                    {"@type": "AdministrativeArea", "name": "Kanata"},
+                    {"@type": "AdministrativeArea", "name": "Gloucester"},
+                    {"@type": "AdministrativeArea", "name": "Orléans"},
+                    {"@type": "AdministrativeArea", "name": "Centretown"},
+                    {"@type": "AdministrativeArea", "name": "Westboro"},
+                    {"@type": "AdministrativeArea", "name": "Carlington"},
+                    {"@type": "AdministrativeArea", "name": "South Keys"},
+                    {"@type": "AdministrativeArea", "name": "Hunt Club"},
+                    {"@type": "AdministrativeArea", "name": "Riverside South"},
+                    {"@type": "AdministrativeArea", "name": "Vanier"},
+                  ],
+                  "sameAs": [
+                    "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
+                    "https://www.instagram.com/leprowellnesscenter.ca",
+                    "https://www.facebook.com/leprowellnesscenter",
+                    "https://www.linkedin.com/company/leprowellnesscenter",
+                  ],
+                  "medicalSpecialty": [
+                    "Physiotherapy",
+                    "Pelvic Floor Physiotherapy",
+                    "Sports Medicine",
+                    "Manual Therapy",
+                    "Registered Massage Therapy",
+                    "Athletic Therapy",
+                    "MVA Rehabilitation",
+                    "Dry Needling",
+                    "Geriatric Rehabilitation",
+                  ],
+                  "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Physiotherapy & Wellness Services Ottawa",
+                    "itemListElement": [
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "MedicalTherapy",
+                          "name": "Physiotherapy Ottawa",
+                          "url": "https://www.leprowellnesscenter.ca/services/physiotherapy",
+                          "description": "Expert physiotherapy in Ottawa for back pain, sports injuries, MVA rehab, and chronic pain.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "MedicalTherapy",
+                          "name": "Pelvic Floor Physiotherapy Ottawa",
+                          "url": "https://www.leprowellnesscenter.ca/services/physiotherapy",
+                          "description": "Specialized pelvic floor physiotherapy in Ottawa for pelvic pain, postpartum recovery, and incontinence.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "MedicalTherapy",
+                          "name": "Registered Massage Therapy Ottawa",
+                          "url": "https://www.leprowellnesscenter.ca/services/massage-therapy",
+                          "description": "Registered massage therapy (RMT) in Ottawa for stress relief, healing, and pain management.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "MedicalTherapy",
+                          "name": "Athletic Therapy Ottawa",
+                          "url": "https://www.leprowellnesscenter.ca/services/athletic-therapy",
+                          "description": "Specialized athletic therapy for sports injuries and performance rehabilitation in Ottawa.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "MedicalTherapy",
+                          "name": "MVA Rehabilitation Ottawa",
+                          "url": "https://www.leprowellnesscenter.ca/services/accidental-therapy",
+                          "description": "Comprehensive MVA rehabilitation for motor vehicle accident victims in Ottawa.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "MedicalTherapy",
+                          "name": "Dry Needling / IMS Ottawa",
+                          "url": "https://www.leprowellnesscenter.ca/services/physiotherapy",
+                          "description": "Intramuscular Stimulation (IMS) and dry needling therapy for chronic muscle tension and neuropathic pain in Ottawa.",
+                        },
+                      },
+                    ],
+                  },
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.leprowellnesscenter.ca/#website",
+                  "name": "LePro Wellness Center Ottawa",
+                  "url": "https://www.leprowellnesscenter.ca",
+                  "inLanguage": "en-CA",
+                  "publisher": {"@id": "https://www.leprowellnesscenter.ca/#organization"},
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://www.leprowellnesscenter.ca/blog?q={search_term_string}",
+                    },
+                    "query-input": "required name=search_term_string",
+                  },
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.leprowellnesscenter.ca/#webpage",
+                  "url": "https://www.leprowellnesscenter.ca",
+                  "name": "Physiotherapy Ottawa | LePro Wellness Center | Pelvic Floor, Sports Injury & MVA Rehab",
+                  "isPartOf": {"@id": "https://www.leprowellnesscenter.ca/#website"},
+                  "about": {"@id": "https://www.leprowellnesscenter.ca/#organization"},
+                  "speakable": {
+                    "@type": "SpeakableSpecification",
+                    "cssSelector": ["h1", ".speakable-summary"],
+                  },
                 },
               ],
-              "hasMap": "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
-              "priceRange": "$$",
-              "paymentAccepted": ["Cash", "Credit Card", "Insurance"],
-              "currenciesAccepted": "CAD",
-              "areaServed": [
-                "Ottawa", "Nepean", "Barrhaven", "Kanata", "Gloucester",
-                "Orléans", "Centretown", "Westboro", "Carlington", "South Keys",
-              ],
-              "sameAs": [
-                "https://maps.app.goo.gl/vCoEidjfaJQ1B1ou5",
-                "https://www.instagram.com/leprowellnesscenter.ca",
-              ],
-              "medicalSpecialty": [
-                "Physiotherapy",
-                "Registered Massage Therapy",
-                "Athletic Therapy",
-                "MVA Rehabilitation",
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Wellness & Physiotherapy Services Ottawa",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "MedicalTherapy",
-                      "name": "Physiotherapy Ottawa",
-                      "url": "https://www.leprowellnesscenter.ca/services/physiotherapy",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "MedicalTherapy",
-                      "name": "Registered Massage Therapy Ottawa",
-                      "url": "https://www.leprowellnesscenter.ca/services/massage-therapy",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "MedicalTherapy",
-                      "name": "Athletic Therapy Ottawa",
-                      "url": "https://www.leprowellnesscenter.ca/services/athletic-therapy",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "MedicalTherapy",
-                      "name": "MVA Rehabilitation Ottawa",
-                      "url": "https://www.leprowellnesscenter.ca/services/accidental-therapy",
-                    },
-                  },
-                ],
-              },
             }),
           }}
         />
 
-        {/* BreadcrumbList Schema */}
+        {/* BreadcrumbList Schema — Homepage */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "LePro Wellness Center Ottawa",
-              "url": "https://www.leprowellnesscenter.ca",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                  "@type": "EntryPoint",
-                  "urlTemplate": "https://www.leprowellnesscenter.ca/blog?q={search_term_string}",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Physiotherapy Ottawa — LePro Wellness Center",
+                  "item": "https://www.leprowellnesscenter.ca",
                 },
-                "query-input": "required name=search_term_string",
-              },
+              ],
             }),
           }}
         />
